@@ -16,7 +16,7 @@
 
     <header class="header">
         <img src="assets/img/logo-DeI.png" alt="Logo Daven & Iori" class="logo">
-        <a href="https://daveniori.lojavirtualnuvem.com.br" class="store-button">Visitar a Loja</a>
+        <!-- <a href="https://daveniori.lojavirtualnuvem.com.br" class="store-button">Visitar a Loja</a> -->
     </header>
 
     <main>
@@ -54,32 +54,43 @@
 
         <section class="sneak-peek">
             <h2 class="title reveal">Destaques da Temporada</h2>
-            <div class="collection-grid">
 
-                <div class="collection-item reveal">
-                    <div class="img-container">
-                        <img src="assets/img/roupas/bata-gravata-2.png" alt="Blusa de babados cor menta com laço">
+            <div class="carousel-container reveal">
+                <button class="carousel-button prev" style="left: 10px;">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L2 10L11 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="carousel-track">
+
+                    <div class="carousel-slide active-slide">
+                        <img src="assets/img/roupas/bata-gravata-2.png" alt="Blusa de babados cor menta">
+                        <h3>Leveza Menta</h3>
+                        <p>Blusa fluida com gola laço e detalhes em babados.</p>
                     </div>
-                    <h3>Leveza Menta</h3>
-                    <p>Blusa fluida com gola laço e detalhes em babados. A definição de elegância diurna.</p>
+
+                    <div class="carousel-slide">
+                        <img src="assets/img/roupas/conjunto-colete-1.png" alt="Conjunto de alfaiataria azul">
+                        <h3>Alfaiataria Moderna</h3>
+                        <p>Conjunto em tom azul céu com corte estruturado.</p>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="./assets/img/roupas/bata-lapela-1.webp" alt="Blusa amarela fluida">
+                        <h3>Vibração Solar</h3>
+                        <p>Tons quentes para iluminar sua produção.</p>
+                    </div>
+
                 </div>
 
-                <div class="collection-item reveal">
-                    <div class="img-container">
-                        <img src="assets/img/roupas/conjunto-colete-1.png" alt="Conjunto de alfaiataria azul claro">
-                    </div>
-                    <h3>Alfaiataria Moderna</h3>
-                    <p>Conjunto em tom azul céu com corte estruturado e silhueta contemporânea.</p>
-                </div>
-
-                <div class="collection-item reveal">
-                    <div class="img-container">
-                        <img src="./assets/img/roupas/bata-lapela-1.webp"
-                            alt="Blusa amarela fluida com calça terracota">
-                    </div>
-                    <h3>Vibração Solar</h3>
-                    <p>A combinação perfeita de tons quentes para iluminar sua produção com sofisticação.</p>
-                </div>
+                <button class="carousel-button next" style="right: 10px;">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L10 10L1 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </section>
 
@@ -145,6 +156,54 @@
         window.addEventListener("scroll", reveal);
         // Chama uma vez no carregamento para garantir que o topo já apareça
         reveal();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+            const nextButton = document.querySelector('.carousel-button.next');
+            const prevButton = document.querySelector('.carousel-button.prev');
+
+            let currentIndex = 0; // Começa no primeiro slide
+
+            // Função para mover o carrossel
+            const updateCarousel = (index) => {
+                // Remove a classe ativa de todos e adiciona no atual
+                slides.forEach(slide => slide.classList.remove('active-slide'));
+                slides[index].classList.add('active-slide');
+
+                // Lógica de centralização para slides de 60%
+                // 20% é a margem esquerda para centralizar um item de 60% (100 - 60) / 2
+                // Subtraímos (index * 60) para mover a trilha para a esquerda
+                const slideWidth = 60;
+                const centerOffset = 20;
+                const targetPos = centerOffset - (index * slideWidth);
+
+                track.style.transform = `translateX(${targetPos}%)`;
+            };
+
+            // Evento Próximo
+            nextButton.addEventListener('click', () => {
+                if (currentIndex < slides.length - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0; // Loop infinito (volta para o primeiro)
+                }
+                updateCarousel(currentIndex);
+            });
+
+            // Evento Anterior
+            prevButton.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = slides.length - 1; // Loop infinito (vai para o último)
+                }
+                updateCarousel(currentIndex);
+            });
+
+            // Inicializa na posição correta
+            updateCarousel(currentIndex);
+        });
     </script>
 
 </body>
