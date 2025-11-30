@@ -114,6 +114,10 @@ p {
     letter-spacing: 0.5px;
 }
 
+.store-button {
+    background-color: rgba(207, 181, 59, 0.3)
+}
+
 .store-button:hover,
 .signup-form button:hover {
     box-shadow: 0 4px 15px rgba(207, 181, 59, 0.3);
