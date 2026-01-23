@@ -10,8 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Lógica de Direcionamento e Tags
     switch ($projeto) {
-        case 'ebook_maternidade':
-            $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
+        case 'maternidade_lucro':
+            // $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
+            echo "<script>alert('Obrigado por se inscrever no eBook Maternidade Lucrativa! Em breve, você receberá um e-mail com mais informações.');</script>";
             // Aqui você dispararia a tag para o funil de maternidade
             break;
 
@@ -25,7 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //     break;
 
         default:
-            $checkout_url = "obrigado.php";
+            // $checkout_url = "obrigado.php";
+            echo $projeto;
             break;
     }
 
