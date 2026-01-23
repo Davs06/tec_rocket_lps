@@ -2,7 +2,7 @@
     position: fixed;
     width: 20px;
     height: 20px;
-    background: var(--follower-color, #818cf8);
+    background: var(--follower-color);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;

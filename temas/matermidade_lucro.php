@@ -18,11 +18,18 @@
             background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
         }
     </style>
+    <style>
+        :root {
+            --follower-color: "<?php echo $cor_rastro;
+                                ?>";
+
+        }
+    </style>
 </head>
 
 <body class="bg-white text-gray-800">
 
-    <div id="mouse-follower"></div>
+
 
     <header class="gradient-bg border-b border-rose-100">
         <div class="max-w-6xl mx-auto px-6 py-16 md:flex items-center gap-12">
@@ -131,12 +138,9 @@
         &copy; <?php echo date("Y"); ?> Maternidade & Lucro | Por Tec Rocket
     </footer>
 
-    <style>
-        :root {
-            --follower-color: <?php echo $cor_rastro;
-                                ?>;
-        }
-    </style>
+
+
+    <div id="mouse-follower"></div>
 
 
     <script>

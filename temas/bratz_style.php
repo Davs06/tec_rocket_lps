@@ -18,6 +18,14 @@
     <link rel="stylesheet" href="assets/css/mouse_follower.css">
 </head>
 
+<style>
+    :root {
+        --follower-color: "<?php echo $cor_rastro;
+                            ?>";
+
+    }
+</style>
+
 <body>
 
     <header class="hero">
@@ -106,13 +114,6 @@
     <footer>
         <p>&copy; 2025 Bratz Style. Todos os direitos reservados.</p>
     </footer>
-
-    <style>
-        :root {
-            --follower-color: <?php echo $cor_rastro;
-                                ?>;
-        }
-    </style>
 
     <div id="mouse-follower"></div>
 

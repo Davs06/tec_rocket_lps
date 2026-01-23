@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="assets/css/lp.css">
 </head>
 
+
+<style>
+    :root {
+        --follower-color: "<?php echo $cor_rastro;
+                            ?>";
+
+    }
+</style>
+
 <body>
 
     <header class="header">
@@ -134,12 +143,7 @@
         <p>&copy; <?php echo date("Y"); ?> Daven & Iori. Todos os direitos reservados.</p>
     </footer>
 
-    <style>
-        :root {
-            --follower-color: <?php echo $cor_rastro;
-                                ?>;
-        }
-    </style>
+
 
     <div id="mouse-follower"></div>
 
