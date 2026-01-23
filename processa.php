@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Lógica de Direcionamento e Tags
     switch ($projeto) {
-        case 'maternidade_lucro':
+        case 'ebook_maternidade':
             $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
             // Aqui você dispararia a tag para o funil de maternidade
             break;
