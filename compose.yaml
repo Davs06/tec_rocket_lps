@@ -1,23 +1,20 @@
 version: '3.8'
 
 services:
-  daven-iori-frontend:
-    image: davs933/daven-iori-frontend:main
-    container_name: daven-iori-frontend
+  techrocket-lps:
+    image: davs933/techrocket-lps:main
+    container_name: techrocket-lps
     restart: unless-stopped
     networks:
       - web
     labels:
-      # Habilita o Traefik para este serviço
-      - "traefik.enable=true" # --- Roteador principal para HTTPS ---
-      - "traefik.http.routers.daven-iori-frontend.rule=Host(`loja.techrocket.site`) || Host(`daveniori.com.br`)"
-      - "traefik.http.routers.daven-iori-frontend.service=daven-iori-frontend"
-      - "traefik.http.routers.daven-iori-frontend.entrypoints=websecure"
-      - "traefik.http.routers.daven-iori-frontend.tls=true"
-      - "traefik.http.routers.daven-iori-frontend.tls.certresolver=lets-encrypt"
-
+      - "traefik.enable=true"
+      - "traefik.http.routers.techrocket-lps.rule=Host(`bratzstyle.com.br`) || Host(`daveniori.com.br`) || Host(`techroket.site`) || Host(`bratz.techrocket.site`)"
+      - "traefik.http.routers.techrocket-lps.entrypoints=websecure"
+      - "traefik.http.routers.techrocket-lps.tls=true"
+      - "traefik.http.routers.techrocket-lps.tls.certresolver=lets-encrypt"
       # --- Serviço (aponta para a porta interna do contêiner) ---
-      - "traefik.http.services.daven-iori-frontend.loadbalancer.server.port=80"
+      - "traefik.http.services.techrocket-lps.loadbalancer.server.port=80"
 
 networks:
   web:

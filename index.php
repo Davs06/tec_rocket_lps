@@ -1,38 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+$dominio = $_SERVER['HTTP_HOST'];
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daven & Iori - Em Breve</title>
+// Lógica de Seleção por Domínio ou Caminho
+if ($dominio == 'bratzstyle.com.br' || $dominio == 'bratz.techrocket.site') {
+    $projeto = 'bratz_style';
+} elseif ($dominio == 'daveniori.com.br' || $dominio == 'loja.techrocket.site') {
+    $projeto = 'daven_iori';
+} elseif ($uri == '/produtos/ebook-maternidade') {
+    $projeto = 'matermidade_lucro'; // Nome do ficheiro em /temas/
+} else {
+    // Se não encontrar a rota, carrega a sua 404 personalizada
+    include('404.php');
+    exit;
+}
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="/assets/img/favicon.ico" />
-    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest">
-
-
-
-</head>
-
-<body>
-    <div class="container">
-        <img src="assets/img/logo-DeI.png" alt="Logo Daven & Iori" class="logo">
-
-        <header class="header">
-            <h1>Daven & Iori</h1>
-            <p class="subtitle">A elegância em cada detalhe.</p>
-        </header>
-        <main class="main-content">
-            <a href="https://daveniori.lojavirtualnuvem.com.br">
-                <h2>EM BREVE</h2>
-            </a>
-            <p>Estamos preparando algo incrível para você. Nosso site está em construção, mas em breve estará no ar!</p>
-        </main>
-        <footer class="footer">
-            <p>&copy; <?php echo date("Y"); ?> Daven & Iori. Todos os direitos reservados.</p>
-        </footer>
-    </div>
-</body>
-
-</html>
+include("temas/{$projeto}.php");

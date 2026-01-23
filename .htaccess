@@ -1,15 +1,14 @@
-# Ativa o motor de reescrita de URL
 RewriteEngine On
 
-# --- NOVA LINHA: Define o documento de erro 404 ---
-ErrorDocument 404 /404.php
+# 1. Define a base para as reescritas
+RewriteBase /
 
-# Garante que o Apache procure por diretórios e arquivos antes de aplicar regras
-RewriteCond %{REQUEST_FILENAME} !-d
+# 2. Se o arquivo ou diretório solicitado existir fisicamente, acessa-o diretamente
+# Isso garante que imagens, CSS e JS (como em /assets/) carreguem normalmente
+
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
-# Regra para a Landing Page: /lancamento -> lp.php
-RewriteRule ^lancamento/?$ index.php [L]
-
-# Regra para a página "Em Breve": / (raiz) -> index.php
-RewriteRule ^$ lp.php [L]
+# 3. Redireciona todas as outras solicitações para o index.php
+# Isso permite que o PHP leia a URL /produtos/ebook-maternidade
+RewriteRule ^(.*)$ index.php [L,QSA]

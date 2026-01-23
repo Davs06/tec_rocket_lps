@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/daven-iori-frontend
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/techrocket-lps
 
       # 4. Constrói a imagem Docker e a envia para o Docker Hub
       # A imagem será tagueada como 'latest' e também com o hash do commit
