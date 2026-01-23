@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bratz Style - Sua Loja de Moda e Beleza</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bratz_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,28 +110,28 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
-    const swiper1 = new Swiper('.swiper-card1', {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        }
-    });
+        const swiper1 = new Swiper('.swiper-card1', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+        });
 
-    const swiper2 = new Swiper('.swiper-card2', {
-        loop: true,
-        autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
-        }
-    });
+        const swiper2 = new Swiper('.swiper-card2', {
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            }
+        });
     </script>
 
     <script>
-    AOS.init({
-        duration: 1000,
+        AOS.init({
+            duration: 1000,
 
-    });
+        });
     </script>
 
 </body>
