@@ -15,47 +15,47 @@
 
 <body class="font-sans">
 
-    <div id="mouse-follower"></div>
-    <style>
-        :root {
-            --follower-color: <?php echo $cor_rastro;
-                                ?>;
-        }
-    </style>
+    <div id="mouse-follower">
+        <style>
+            :root {
+                --follower-color: <?php echo $cor_rastro;
+                                    ?>;
+            }
+        </style>
 
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <div class="flex items-center gap-2">
-            <img src="/assets/img/tech_rocket/logotec_rockett.png" alt="Tec Rocket Logo" class="h-12">
-            <span class="text-2xl font-bold tracking-tighter">TEC <span class="text-indigo-400">ROCKET</span></span>
-        </div>
-        <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
-            <a href="#produtos" class="hover:text-indigo-400">Produtos</a>
-            <a href="#servicos" class="hover:text-indigo-400">Serviços</a>
-            <a href="#parceiros" class="hover:text-indigo-400">Parceiros</a>
-            <a href="#contato" class="bg-indigo-600 px-4 py-2 rounded-full">Orçamento</a>
-        </div>
-    </nav>
+        <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <img src="/assets/img/tech_rocket/logotec_rockett.png" alt="Tec Rocket Logo" class="h-12">
+                <span class="text-2xl font-bold tracking-tighter">TEC <span class="text-indigo-400">ROCKET</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#produtos" class="hover:text-indigo-400">Produtos</a>
+                <a href="#servicos" class="hover:text-indigo-400">Serviços</a>
+                <a href="#parceiros" class="hover:text-indigo-400">Parceiros</a>
+                <a href="#contato" class="bg-indigo-600 px-4 py-2 rounded-full">Orçamento</a>
+            </div>
+        </nav>
 
-    <header class="py-20 px-6 text-center max-w-4xl mx-auto hero-section" data-aos="zoom-in">
-        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            Impulsionando Negócios com <span class="gradient-text">Tecnologia e Automação</span>.
-        </h1>
-        <p class="text-lg text-slate-400 mb-10">
-            Criamos ecossistemas digitais inteligentes, desde Landing Pages de alta conversão até Chatbots
-            personalizados integrados com IA.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="#contato"
-                class="bg-indigo-600 hover:bg-indigo-700 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shadow-indigo-500/20">
-                Iniciar um Projeto
-            </a>
-            <a href="#produtos"
-                class="border border-slate-700 hover:bg-slate-800 px-10 py-4 rounded-full font-bold text-lg transition">
-                Ver Nossos Produtos
-            </a>
-        </div>
-    </header>
-
+        <header class="py-20 px-6 text-center max-w-4xl mx-auto hero-section" data-aos="zoom-in">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                Impulsionando Negócios com <span class="gradient-text">Tecnologia e Automação</span>.
+            </h1>
+            <p class="text-lg text-slate-400 mb-10">
+                Criamos ecossistemas digitais inteligentes, desde Landing Pages de alta conversão até Chatbots
+                personalizados integrados com IA.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contato"
+                    class="bg-indigo-600 hover:bg-indigo-700 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shadow-indigo-500/20">
+                    Iniciar um Projeto
+                </a>
+                <a href="#produtos"
+                    class="border border-slate-700 hover:bg-slate-800 px-10 py-4 rounded-full font-bold text-lg transition">
+                    Ver Nossos Produtos
+                </a>
+            </div>
+        </header>
+    </div>
     <section id="produtos" class="py-20 px-6 max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 text-center">Nossos <span class="text-indigo-400">Produtos</span></h2>
         <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
