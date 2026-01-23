@@ -8,7 +8,9 @@ if ($dominio == 'bratzstyle.com.br' || $dominio == 'bratz.techrocket.site') {
 } elseif ($dominio == 'daveniori.com.br' || $dominio == 'loja.techrocket.site') {
     $projeto = 'daven_iori';
 } elseif ($uri == '/produtos/ebook-maternidade') {
-    $projeto = 'matermidade_lucro'; // Nome do ficheiro em /temas/
+    $projeto = 'matermidade_lucro';
+} elseif ($dominio == 'techrocket.site' && $uri == '/') {
+    $projeto = 'tech_rocket_institucional';
 } else {
     // Se não encontrar a rota, carrega a sua 404 personalizada
     include('404.php');

@@ -1,0 +1,75 @@
+/* assets/css/techrocket.css */
+
+/* Configurações Globais */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Efeito de Texto Gradiente */
+.gradient-text {
+    background: linear-gradient(90deg, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilização do Header / Hero Section com a Imagem */
+header.hero-section {
+    position: relative;
+    padding: 120px 24px;
+    /* Substitua 'hero-rocket.png' pelo nome que você salvou a imagem gerada */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('./assets/img/tech_rocket/section1_teck_rocket.png') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Adiciona um efeito de profundidade (parallax) */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(129, 140, 248, 0.2);
+}
+
+/* Cartões de Serviços e Produtos (Estilo Glassmorphism) */
+.rocket-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.rocket-card:hover {
+    transform: translateY(-12px);
+    border-color: #818cf8;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(129, 140, 248, 0.1);
+}
+
+/* Ajustes de Navegação */
+nav {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(15, 23, 42, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+/* Formulário de Contato Profissional */
+input,
+textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.5);
+}
