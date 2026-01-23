@@ -15,7 +15,8 @@
     <style>
         :root {
             /* Usamos aspas simples para garantir que o CSS entenda como string se necessário */
-            --follower-color: " <?php echo $cor_rastro; ?>";
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
 
         }
     </style>
