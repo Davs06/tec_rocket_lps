@@ -102,7 +102,7 @@
             <p class="text-rose-200 mb-10">Comece hoje a construir sua liberdade financeira perto de quem
                 você ama.</p>
 
-            <form action="processa.php" method="POST"
+            <form action="/processa.php" method="POST"
                 class="bg-white p-8 rounded-2xl text-gray-900 shadow-2xl text-left">
                 <div class="grid md:grid-cols-2 gap-4 mb-4">
                     <input type="text" name="nome" placeholder="Seu Nome" required
@@ -112,6 +112,8 @@
                 </div>
                 <input type="text" name="whatsapp" placeholder="Seu WhatsApp (com DDD)" required
                     class="w-full border p-4 rounded-lg mb-6 outline-rose-500">
+
+                <input type="hidden" name="origem" value="ebook-maternidade">
 
                 <button type="submit"
                     class="w-full bg-green-500 hover:bg-green-600 text-white font-extrabold py-5 rounded-lg text-lg transition uppercase shadow-lg">
