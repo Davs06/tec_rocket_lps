@@ -14,14 +14,6 @@
 </head>
 
 
-<style>
-    :root {
-        --follower-color: "<?php echo $cor_rastro;
-                            ?>";
-
-    }
-</style>
-
 <body>
 
     <header class="header">

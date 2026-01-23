@@ -18,13 +18,6 @@
             background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
         }
     </style>
-    <style>
-        :root {
-            --follower-color: "<?php echo $cor_rastro;
-                                ?>";
-
-        }
-    </style>
 </head>
 
 <body class="bg-white text-gray-800">

@@ -18,14 +18,6 @@
     <link rel="stylesheet" href="/assets/css/mouse_follower.css">
 </head>
 
-<style>
-    :root {
-        --follower-color: "<?php echo $cor_rastro;
-                            ?>";
-
-    }
-</style>
-
 <body>
 
     <header class="hero">
