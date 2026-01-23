@@ -5,6 +5,7 @@
     background: var(--follower-color);
     border-radius: 50%;
     border: 1px solid var(--follower-color);
+    padding: 2px;
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.15s ease-out, background 0.3s ease;
