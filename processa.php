@@ -4,9 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = urlencode($_POST['nome']);
     $email = urlencode($_POST['email']);
     $whatsapp = $_POST['whatsapp'];
+    $projeto = $_POST['origem'] ?? 'desconhecido';
 
-    // Captura o nome do projeto vindo do campo oculto
-    $projeto = $_POST['projeto_origem'] ?? 'desconhecido';
 
     // Lógica de Direcionamento e Tags
     switch ($projeto) {
@@ -14,6 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
             echo "<script>alert('Obrigado por se inscrever no eBook Maternidade Lucrativa! Em breve, você receberá um e-mail com mais informações.');</script>";
             // Aqui você dispararia a tag para o funil de maternidade
+            break;
+
+        case 'tech_rocket_institucional':
+            // Redireciona para uma página de "Obrigado" ou WhatsApp da Tec Rocket
+            $checkout_url = "obrigado.php";
             break;
 
         // case 'tech_rocket_institucional':
