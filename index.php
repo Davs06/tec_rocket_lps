@@ -8,7 +8,7 @@ if ($dominio == 'bratzstyle.com.br' || $dominio == 'bratz.techrocket.site') {
 } elseif ($dominio == 'daveniori.com.br' || $dominio == 'loja.techrocket.site') {
     $projeto = 'daven_iori';
     $cor_rastro = '#C5A059'; // Ouro/Dourado Elegante
-} elseif ($uri == '/produtos/ebook-maternidade') {
+} elseif ($dominio == 'techrocket.site' && $uri == '/produtos/ebook-maternidade') {
     $projeto = 'maternidade_lucro';
     $cor_rastro = '#f43f5e'; // Rose/Rosa Suave
 } elseif ($dominio == 'techrocket.site' && $uri == '/') {
