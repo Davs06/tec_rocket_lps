@@ -11,6 +11,15 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="assets/css/lp.css">
+
+    <style>
+        :root {
+            /* Usamos aspas simples para garantir que o CSS entenda como string se necessário */
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
+
+        }
+    </style>
 </head>
 
 

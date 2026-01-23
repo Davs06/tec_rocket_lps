@@ -17,6 +17,13 @@
         .gradient-bg {
             background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
         }
+
+        :root {
+            /* Usamos aspas simples para garantir que o CSS entenda como string se necessário */
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
+
+        }
     </style>
 </head>
 

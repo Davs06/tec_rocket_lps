@@ -16,6 +16,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/assets/css/mouse_follower.css">
+
+    <style>
+        :root {
+            /* Usamos aspas simples para garantir que o CSS entenda como string se necessário */
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
+
+        }
+    </style>
 </head>
 
 <body>
