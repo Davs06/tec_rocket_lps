@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   techrocket-lps:
-    image: davs933/techrocket-lps:latest
+    image: davs933/techrocket-lps:main
     networks:
       - traefik_public
     deploy:
