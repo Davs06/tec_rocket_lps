@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'nome' => $_POST['nome'],
         'email' => $_POST['email'],
         'whatsapp' => $_POST['whatsapp'],
-        'origem_projeto' => $projeto, // Enviará 'maternidade_lucro', 'bratz_style', etc.
         'dominio' => $_SERVER['HTTP_HOST']
     ];
 
