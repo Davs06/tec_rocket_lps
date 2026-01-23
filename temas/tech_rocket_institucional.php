@@ -11,9 +11,11 @@
 
     <link rel="stylesheet" href="/assets/css/techrocket.css">
     <link rel="stylesheet" href="assets/css/mouse_follower.css">
-    < </head>
+</head>
 
 <body class="font-sans">
+
+    <div id="mouse-follower"></div>
 
     <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
         <div class="flex items-center gap-2">
@@ -143,8 +145,8 @@
         }
     </style>
 
-    <div id="mouse-follower"></div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         const follower = document.getElementById('mouse-follower');
 
@@ -167,7 +169,6 @@
             });
         });
     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,

@@ -22,6 +22,8 @@
 
 <body class="bg-white text-gray-800">
 
+    <div id="mouse-follower"></div>
+
     <header class="gradient-bg border-b border-rose-100">
         <div class="max-w-6xl mx-auto px-6 py-16 md:flex items-center gap-12">
             <div class="md:w-1/2 text-center md:text-left">
@@ -136,7 +138,6 @@
         }
     </style>
 
-    <div id="mouse-follower"></div>
 
     <script>
         const follower = document.getElementById('mouse-follower');
