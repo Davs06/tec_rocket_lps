@@ -27,8 +27,8 @@
 
     <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
         <div class="flex items-center gap-2">
-            <img src="/assets/img/tech_rocket/logotec_rockett.png" alt="Tec Rocket Logo" class="h-12">
-            <span class="text-2xl font-bold tracking-tighter">TEC <span class="text-indigo-400">ROCKET</span></span>
+            <img src="/assets/img/tech_rocket/logotec_rocket.png" alt="Tec Rocket Logo" class="h-12">
+            <span class="text-2xl font-bold tracking-tighter">TECH <span class="text-indigo-400">ROCKET</span></span>
         </div>
         <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
             <a href="#produtos" class="hover:text-indigo-400">Produtos</a>
