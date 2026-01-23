@@ -73,3 +73,34 @@ input:focus,
 textarea:focus {
     box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.5);
 }
+
+/* Estilo para a seção de parceiros com descrição */
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partner-item:hover .partner-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.partner-item {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+/* Efeito sutil de card ao passar o mouse */
+.partner-item:hover {
+    background: rgba(30, 41, 59, 0.3);
+}
+
+.partner-item p {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}

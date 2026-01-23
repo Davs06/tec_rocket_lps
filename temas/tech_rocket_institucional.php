@@ -103,12 +103,34 @@
     </section>
 
     <section id="parceiros" class="py-20 px-6 text-center max-w-7xl mx-auto">
-        <h2 class="text-2xl font-bold mb-12 text-slate-500 uppercase tracking-widest">Nossos Parceiros de Ecossistema
-        </h2>
-        <div
-            class="flex flex-wrap justify-center gap-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-500">
-            <div class="text-2xl font-bold">SomosTec Br</div>
-            <div class="text-2xl font-bold">Integra Station</div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-500 uppercase tracking-widest">Nossos Parceiros</h2>
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+
+            <div class="partner-item" data-aos="fade-up">
+                <a href="https://somos.tec.br" target="_blank" class="partner-link mb-4 block">
+                    <img src="/assets/img/tech_rocket/somos_tec.png" alt="Logo SomosTec Br"
+                        class="h-16 mx-auto partner-logo">
+                </a>
+                <h3 class="text-xl font-bold text-indigo-400 mb-2">SomosTec BR</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Na SomosTecBR, criamos sistemas, estratégias e ferramentas digitais para ajudar sua empresa a
+                    prosperar de verdade.
+                </p>
+            </div>
+
+            <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://integrastation.com.br" target="_blank" class="partner-link mb-4 block">
+                    <img src="/assets/img/tech_rocket/integra_station.png" alt="Logo Integra Station"
+                        class="h-16 mx-auto partner-logo">
+                </a>
+                <h3 class="text-xl font-bold text-indigo-400 mb-2">INTEGRA Station</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Pare de perder oportunidades. Com a INTEGRA Station, você constrói a estrutura digital de autoridade
+                    que seu negócio precisa para capturar leads qualificados, nutrir relacionamentos e escalar suas
+                    vendas de forma previsível e automatizada.
+                </p>
+            </div>
+
         </div>
     </section>
 
