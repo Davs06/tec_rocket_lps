@@ -16,6 +16,12 @@
 <body class="font-sans">
 
     <div id="mouse-follower"></div>
+    <style>
+        :root {
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
+        }
+    </style>
 
     <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
         <div class="flex items-center gap-2">
@@ -138,12 +144,7 @@
         <p>&copy; 2026 Tec Rocket. Impulsionando o futuro hoje.</p>
     </footer>
 
-    <style>
-        :root {
-            --follower-color: <?php echo $cor_rastro;
-                                ?>;
-        }
-    </style>
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
