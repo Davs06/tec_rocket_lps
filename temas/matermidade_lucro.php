@@ -42,7 +42,7 @@
             </div>
 
             <div class="md:w-1/2 mt-12 md:mt-0">
-                <img src="assets/img/mamae-crianca.png" alt="Mãe empreendedora com bebê"
+                <img src="/assets/img/mamae-crianca.png" alt="Mãe empreendedora com bebê"
                     class="rounded-2xl shadow-2xl w-full object-cover h-80 md:h-[450px]">
             </div>
         </div>
@@ -54,7 +54,7 @@
             </p>
 
             <div class="flex justify-center mb-8">
-                <img src="assets/img/Maternidade-e-Lucro.png" alt="Mockup do E-book Maternidade & Lucro"
+                <img src="/assets/img/Maternidade-e-Lucro.png" alt="Mockup do E-book Maternidade & Lucro"
                     class="w-64 md:w-96 drop-shadow-2xl">
             </div>
 
