@@ -14,6 +14,9 @@ if ($dominio == 'bratzstyle.com.br' || $dominio == 'bratz.techrocket.site') {
 } elseif ($dominio == 'techrocket.site' && $uri == '/') {
     $projeto = 'tech_rocket_institucional';
     $cor_rastro = '#818cf8'; // Indigo (Tecnologia)
+} elseif ($dominio == 'daveniori.com.br' || $dominio == 'loja.techrocket.site') {
+    $projeto = 'daven_iori';
+    $cor_rastro = '#C5A059'; // O dourado que definimos
 } else {
     include('404.php');
     exit;

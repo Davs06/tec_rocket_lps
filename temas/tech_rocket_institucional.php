@@ -59,19 +59,40 @@
     </header>
 
     <section id="produtos" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center">Nossos <span class="text-indigo-400">Produtos</span></h2>
-        <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
-            <div class="rocket-card p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center">Nossos <span class="text-indigo-400">Projetos & Produtos</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="rocket-card p-8 rounded-3xl flex flex-col gap-6" data-aos="fade-right">
                 <img src="/assets/img/Maternidade-e-Lucro.png" alt="Ebook Maternidade e Lucro"
-                    class="w-48 shadow-2xl rounded-lg">
+                    class="w-full h-48 object-cover rounded-2xl shadow-lg">
                 <div>
-                    <h3 class="text-2xl font-bold mb-2">E-book Maternidade & Lucro</h3>
-                    <p class="text-slate-400 mb-6">Um guia prático para mães que desejam empreender com o apoio da
-                        tecnologia e automação.</p>
-                    <a href="/produtos/ebook-maternidade" class="text-indigo-400 font-bold hover:underline">Ver detalhes
-                        do produto →</a>
+                    <h3 class="text-2xl font-bold mb-2">Maternidade & Lucro</h3>
+                    <span class="text-xs font-mono bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">E-book</span>
                 </div>
+                <p class="text-slate-400 mb-6 text-sm">Um guia estratégico focado em mães que buscam independência
+                    financeira através do digital.</p>
+                <a href="/produtos/ebook-maternidade" class="text-indigo-400 font-bold hover:underline">Ver Projeto
+                    →</a>
+
             </div>
+
+            <div class="rocket-card p-8 rounded-3xl flex flex-col gap-6" data-aos="fade-left">
+                <img src="/assets/img/tech_rocket/DeI_mock.png" alt="Daven & Iori"
+                    class="w-full h-48 object-cover rounded-2xl shadow-lg ">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Daven & Iori</h3>
+                    <span class="text-xs font-mono bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">E-commerce</span>
+                </div>
+
+                <p class="text-slate-400 mb-6 text-sm">Marca autoral de moda e lifestyle. Um projeto que une design
+                    exclusivo e presença digital estratégica.</p>
+                <a href="https://daveniori.com.br" target="_blank"
+                    class="text-indigo-400 font-bold hover:underline">Acessar Loja →</a>
+
+            </div>
+
         </div>
     </section>
 
