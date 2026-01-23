@@ -141,7 +141,7 @@
 
             <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
                 <a href="https://integrastation.com.br" target="_blank" class="partner-link mb-4 block">
-                    <img src="/assets/img/tech_rocket/integra_station.png" alt="Logo Integra Station"
+                    <img src="/assets/img/tech_rocket/integrastatiom-removebg.png" alt="Logo Integra Station"
                         class="h-16 mx-auto partner-logo">
                 </a>
                 <p class="text-slate-400 text-sm leading-relaxed">
