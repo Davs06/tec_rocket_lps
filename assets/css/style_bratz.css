@@ -41,7 +41,7 @@ h2 {
 /* Cabeçalho / Seção Hero */
 .hero {
     /* A única linha alterada foi esta: */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/img/Imagem\ do\ WhatsApp\ de\ 2025-10-22\ à\(s\)\ 17.01.12_a53f656d.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/img/tech_rocket/section1_teck_rocket.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
