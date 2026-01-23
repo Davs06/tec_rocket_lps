@@ -20,7 +20,7 @@ header.hero-section {
     position: relative;
     padding: 120px 24px;
     /* Substitua 'hero-rocket.png' pelo nome que você salvou a imagem gerada */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('/assets/img/tech_rocket/section1_teck_rocket.png') no-repeat center center/cover;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('./assets/img/tech_rocket/section1_teck_rocket.png') no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
