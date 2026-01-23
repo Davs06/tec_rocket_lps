@@ -7,7 +7,7 @@
     <title>Daven & Iori - A Nova Coleção</title>
     <link rel="icon" href="assets/img/favicon.ico" />
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
-    <link rel="stylesheet" href="assets/css/mouse_follower.css">
+    <link rel="stylesheet" href="/assets/css/mouse_follower.css">
     <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="assets/css/lp.css">
