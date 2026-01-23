@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bratz Style - Sua Loja de Moda e Beleza</title>
 
-    <link rel="stylesheet" href="/assets/css/bratz_style.css">
+    <link rel="stylesheet" href="/assets/css/style_bratz.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
