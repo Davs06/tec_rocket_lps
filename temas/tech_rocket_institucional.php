@@ -144,7 +144,6 @@
                     <img src="/assets/img/tech_rocket/integra_station.png" alt="Logo Integra Station"
                         class="h-16 mx-auto partner-logo">
                 </a>
-                <h3 class="text-xl font-bold text-indigo-400 mb-2">INTEGRA Station</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">
                     Pare de perder oportunidades. Com a INTEGRA Station, você constrói a estrutura digital de autoridade
                     que seu negócio precisa para capturar leads qualificados, nutrir relacionamentos e escalar suas
