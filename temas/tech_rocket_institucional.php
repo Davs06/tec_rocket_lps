@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="/assets/css/techrocket.css">
-</head>
+    <link rel="stylesheet" href="assets/css/mouse_follower.css">
+    < </head>
 
 <body class="font-sans">
 
@@ -135,6 +136,37 @@
         <p>&copy; 2026 Tec Rocket. Impulsionando o futuro hoje.</p>
     </footer>
 
+    <style>
+        :root {
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
+        }
+    </style>
+
+    <div id="mouse-follower"></div>
+
+    <script>
+        const follower = document.getElementById('mouse-follower');
+
+        // Seguir o mouse
+        window.addEventListener('mousemove', (e) => {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        });
+
+        // Efeito de Interação: Aumentar ao passar em links/botões
+        const interactables = document.querySelectorAll('a, button, input, .card-produto');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                follower.style.transform = 'translate(-50%, -50%) scale(3)';
+                follower.style.opacity = '0.3';
+            });
+            el.addEventListener('mouseleave', () => {
+                follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                follower.style.opacity = '0.6';
+            });
+        });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
