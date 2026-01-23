@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   techrocket-lps:
-    image: ${{ secrets.DOCKERHUB_USERNAME }}/techrocket-lps:latest
+    image: davs933/techrocket-lps:latest
     container_name: techrocket_lps
     restart: unless-stopped
     networks:
