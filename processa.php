@@ -16,12 +16,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         case 'tech_rocket_institucional':
             $checkout_url = "obrigado.php?from=tech_rocket";
-            $webhook_url = "https://editor.somos.tec.br/webhook-test/teste";
+            $webhook_url = "https://editor.somos.tec.br/webhook-test/tech-rocket";
             break;
 
         case 'daven_iori':
             $checkout_url = "obrigado.php?from=daven_iori";
-            $webhook_url = "https://editor.somos.tec.br/webhook-test/teste";
+            $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
             break;
 
         default:
