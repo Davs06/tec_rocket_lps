@@ -429,22 +429,63 @@ p {
 
 .signup-form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* Empilha as linhas */
     gap: 0;
-    max-width: 550px;
+    /* Mantém os inputs colados conforme seu estilo original */
+    max-width: 650px;
+    /* Aumentado levemente para caber dois inputs lado a lado */
     margin: 0 auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.signup-form input {
-    flex-grow: 1;
-    padding: 1rem 1.5rem;
+/* Container de cima (Nome e Email) */
+.form-row-top {
+    display: flex;
+    /* ESSENCIAL para ficarem lado a lado */
+    width: 100%;
+}
+
+.form-row-top input {
+    width: 50%;
+    /* Metade exata para cada um */
     border: 1px solid #ddd;
+}
+
+/* Ajuste para o input da esquerda não ter borda dupla no meio */
+.form-row-top input:first-child {
     border-right: none;
-    border-radius: 2px 0 0 2px;
+}
+
+/* Container de baixo (WhatsApp e Botão) */
+.form-row-bottom {
+    display: flex;
+    width: 100%;
+}
+
+.form-row-bottom input {
+    flex-grow: 1;
+    /* WhatsApp ocupa o espaço restante */
+    border: 1px solid #ddd;
+    width: 100%;
+    /* margin-bottom: 1rem; */
+}
+
+.form-row-bottom button {
+    width: 100%;
+    /* Largura fixa para o botão */
+    border-radius: 0 0 2px 0;
+    /* Arredonda apenas o canto inferior direito */
+    /* border-top: none; */
+}
+
+/* Ajustes gerais de Input para manter o padrão */
+.signup-form input {
+    padding: 1rem 1.5rem;
     font-family: 'Garamond', serif;
     font-size: 1.1rem;
     outline: none;
+    box-sizing: border-box;
 }
 
 .signup-form button {

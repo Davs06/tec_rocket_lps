@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/assets/css/mouse_follower.css">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="assets/css/lp.css">
+    <link rel="stylesheet" href="/assets/css/lp.css">
 
     <style>
         :root {
@@ -27,7 +27,7 @@
 
     <header class="header">
         <img src="assets/img/logo-DeI.png" alt="Logo Daven & Iori" class="logo">
-        <a href="https://daveniori.lojavirtualnuvem.com.br" class="store-button">Visitar a Loja</a>
+        <!-- <a href="https://daveniori.lojavirtualnuvem.com.br" class="store-button">Visitar a Loja</a> -->
     </header>
 
     <main>
@@ -109,9 +109,16 @@
             <h2 class="title">Entre para a Lista VIP</h2>
             <p>Seja a primeira a saber quando a coleção completa estiver disponível e receba um presente exclusivo de
                 lançamento.</p>
-            <form class="signup-form" action="">
-                <input type="email" placeholder="Indisponivel no momento..." disabled>
-                <button type="submit" disabled>Em breve</button>
+
+            <form class="signup-form" action="/processa.php" method="POST">
+                <div class="form-row-top">
+                    <input type="text" placeholder="Nome." name="nome" required>
+                    <input type="email" placeholder="Email." name="email" required>
+                </div>
+
+                <input type="text" placeholder="WhatsApp 11..." name="whatsapp" class="form-row-bottom" required> <br>
+                <input type="hidden" name="origem" value="daven_iori">
+                <button type="submit" class="form-row-bottom">Entrar na Lista</button>
             </form>
         </section>
     </main>
