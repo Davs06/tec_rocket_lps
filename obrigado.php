@@ -72,7 +72,8 @@ $projeto = $configuracoes[$from] ?? $configuracoes['tech_rocket'];
 <body class="<?php echo $projeto['classe_bg']; ?> transition-colors duration-700">
     <div id="mouse-follower"></div>
 
-    <div class="max-w-2xl mx-auto min-h-screen flex items-center justify-center p-6">
+    <div
+        class="max-w-2xl mx-auto min-h-screen flex items-center justify-center p-6 <?php echo $projeto['card_bg']; ?> rounded-3xl shadow-2xl border border-white/10">
         <div class="rocket-card p-12 rounded-3xl text-center shadow-2xl border border-white/10" data-aos="zoom-in">
             <h1 class="text-4xl font-black mb-4 gradient-text">
                 <?php echo $projeto['titulo']; ?>
