@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tec Rocket - Soluções em Tecnologia e Automação</title>
+    <title>Tech Rocket - Soluções em Tecnologia e Automação</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -188,7 +188,7 @@
     </section>
 
     <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Tec Rocket. Impulsionando o futuro hoje.</p>
+        <p>&copy; <?php echo date("Y"); ?> Impulsionando o futuro hoje.</p>
     </footer>
 
     <div id="mouse-follower"></div>

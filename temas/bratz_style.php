@@ -113,7 +113,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Bratz Style. Todos os direitos reservados.</p>
+        <p>&copy; <?php echo date("Y"); ?> Bratz Style | Por Tech Rocket.</p>
     </footer>
 
     <div id="mouse-follower"></div>

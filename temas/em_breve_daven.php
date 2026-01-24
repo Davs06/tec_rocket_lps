@@ -30,7 +30,7 @@
             <p>Estamos preparando algo incrível para você. Nosso site está em construção, mas em breve estará no ar!</p>
         </main>
         <footer class="footer">
-            <p>&copy; <?php echo date("Y"); ?> Daven & Iori. Todos os direitos reservados.</p>
+            <p>&copy; <?php echo date("Y"); ?> Daven & Iori | Por Tech Rocket</p>
         </footer>
     </div>
 </body>

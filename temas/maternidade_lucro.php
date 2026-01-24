@@ -135,7 +135,7 @@
     </section>
 
     <footer class="py-10 text-center text-gray-400 text-sm">
-        &copy; <?php echo date("Y"); ?> Maternidade & Lucro | Por Tec Rocket
+        &copy; <?php echo date("Y"); ?> Maternidade & Lucro | Por Tech Rocket
     </footer>
 
 
