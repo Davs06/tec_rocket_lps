@@ -10,7 +10,8 @@ $configuracoes = [
         'cor_rastro' => '#818cf8',
         'classe_bg' => 'bg-[#0f172a]', // Fundo escuro tech
         'btn_class' => 'bg-indigo-600 hover:bg-indigo-700',
-        'link_btn' => 'https://wa.link/90wrhg' // Link do WhatsApp da Tech Rocket
+        'link_btn' => 'https://wa.link/90wrhg', // Link do WhatsApp da Tech Rocket
+        'text_btn' => 'WhatsApp Tech Rocket'
     ],
     'daven_iori' => [
         'titulo' => 'Obrigado pela sua Escolha!',
@@ -19,7 +20,8 @@ $configuracoes = [
         'cor_rastro' => '#C5A059', // Dourado
         'classe_bg' => 'bg-[#fafafa]', // Fundo claro premium
         'btn_class' => 'bg-[#C5A059] text-white hover:bg-[#a88a4d]',
-        'link_btn' => 'https://daveniori.lojavirtualnuvem.com.br' // Link para a loja Daven & Iori
+        'link_btn' => 'https://daveniori.lojavirtualnuvem.com.br', // Link para a loja Daven & Iori
+        'text_btn' => 'Visitar Loja Daven & Iori'
     ],
     // 'maternidade' => [
     //     'titulo' => 'Parabéns, Mãezona!',
@@ -79,7 +81,7 @@ $projeto = $configuracoes[$from] ?? $configuracoes['tech_rocket'];
 
             <a href="<?php echo $projeto['link_btn']; ?>"
                 class="<?php echo $projeto['btn_class']; ?> px-10 py-4 rounded-full font-bold transition-all transform hover:scale-105">
-                Voltar para o Início
+                <?php echo $projeto['text_btn']; ?>
             </a>
         </div>
     </div>
