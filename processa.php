@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             break;
 
         case 'tech_rocket_institucional':
-            // Redireciona para uma página de "Obrigado" ou WhatsApp da Tec Rocket
             $checkout_url = "https://wa.link/90wrhg";
             break;
 
