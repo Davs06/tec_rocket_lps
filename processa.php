@@ -9,29 +9,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Lógica de Direcionamento e Tags
     switch ($projeto) {
-        case 'maternidade_lucro':
-            // $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
-            echo "<script>alert('Obrigado por se inscrever no eBook Maternidade Lucrativa! Em breve, você receberá um e-mail com mais informações.');</script>";
+        case 'ebook-maternidade':
+            $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
             // Aqui você dispararia a tag para o funil de maternidade
             break;
 
         case 'tech_rocket_institucional':
             // Redireciona para uma página de "Obrigado" ou WhatsApp da Tec Rocket
-            $checkout_url = "obrigado.php";
+            $checkout_url = "https://wa.link/90wrhg";
             break;
 
-        // case 'tech_rocket_institucional':
-        //     // Redireciona para uma página de "Obrigado" ou WhatsApp da Tec Rocket
-        //     $checkout_url = "obrigado.php?projeto=techrocket";
-        //     break;
-
-        // case 'bratz_style':
-        //     $checkout_url = "https://checkout.exemplo.com/bratz?name=$nome";
-        //     break;
-
         default:
-            // $checkout_url = "obrigado.php";
-            echo $projeto;
+            $checkout_url = "404.php";
             break;
     }
 
