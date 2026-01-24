@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maternidade & Lucro | Guia Prático para Mães</title>
+
+    <meta name="description"
+        content="Descubra como ganhar dinheiro online enquanto cuida do seu bebê com nosso guia prático para mães empreendedoras.">
+    <link rel="icon" type="image/png" href="/assets/img/favicon-ebook/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon-ebook/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-ebook/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Maternidade & Lucro" />
+    <link rel="manifest" href="/assets/img/favicon-ebook/site.webmanifest" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/mouse_follower.css">

@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Rocket - Soluções em Tecnologia e Automação</title>
+    <meta name="description"
+        content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA e integrações personalizadas.">
+
+    <link rel="icon" type="image/png" href="/assets/img/favicon-techRocket/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon-techRocket/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/favicon-techRocket/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-techRocket/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Tech Rocket" />
+    <link rel="manifest" href="/assets/img/favicon-techRocket/site.webmanifest" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
