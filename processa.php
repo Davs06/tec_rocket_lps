@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = [
         'nome' => $nome,
         'email' => $email,
-        'whatsapp' => $whatsapp,
+        'whatsapp' => '55' . $whatsapp,
         'projeto' => $projeto // Agora você tem o nome exato do projeto aqui!
     ];
 
