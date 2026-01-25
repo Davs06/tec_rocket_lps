@@ -19,42 +19,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $webhook_url = "https://editor.somos.tec.br/webhook-test/tech-rocket";
             break;
 
-        // case 'daven_iori':
-        //     // 1. Configurações da API do Baserow
-        //     $baserow_token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
-        //     $table_id = "814396"; // ID da tabela Leads VIP
-
-        //     // 2. Filtro de busca (Busca por email OU whatsapp)
-        //     // Usamos o filtro 'filter__field_xxx__contains' conforme a documentação do Baserow
-        //     $query_url = "https://baserow.io/api/database/rows/table/{$table_id}/?user_field_names=true&filter__Email__equal=" . urlencode($email) . "&filter__WhatsApp__equal=" . urlencode($whatsapp) . "&filter_type=OR";
-
-        //     $ch = curl_init($query_url);
-        //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        //     curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        //         "Authorization: Token $baserow_token"
-        //     ]);
-
-        //     $response = curl_exec($ch);
-        //     $data = json_decode($response, true);
-        //     curl_close($ch);
-
-        //     // 3. Lógica de Redirecionamento
-        //     if (!empty($data['results'])) {
-        //         // Se achou registros, o lead já existe -> Direto para a Loja
-        //         header("Location: https://daveniori.lojavirtualnuvem.com.br");
-        //         $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-        //     } else {
-        //         // Se não achou, envia para o n8n e depois para a página de obrigado
-        //         // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
-        //         $checkout_url = "obrigado.php?from=daven_iori";
-        //         $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-        //     }
-        //     exit;
-        //     break;
         case 'daven_iori':
-            $checkout_url = "obrigado.php?from=daven_iori";
-            $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+            // 1. Configurações da API do Baserow
+            $baserow_token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
+            $table_id = "814396"; // ID da tabela Leads VIP
+
+            // 2. Filtro de busca (Busca por email OU whatsapp)
+            // Usamos o filtro 'filter__field_xxx__contains' conforme a documentação do Baserow
+            $query_url = "https://baserow.io/api/database/rows/table/{$table_id}/?user_field_names=true&filter__Email__equal=" . urlencode($email) . "&filter__WhatsApp__equal=" . urlencode($whatsapp) . "&filter_type=OR";
+
+            $ch = curl_init($query_url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, [
+                "Authorization: Token $baserow_token"
+            ]);
+
+            $response = curl_exec($ch);
+            $data = json_decode($response, true);
+            curl_close($ch);
+
+            // 3. Lógica de Redirecionamento
+            if (!empty($data['results'])) {
+                // Se achou registros, o lead já existe -> Direto para a Loja
+                header("Location: https://daveniori.lojavirtualnuvem.com.br");
+                $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+            } else {
+                // Se não achou, envia para o n8n e depois para a página de obrigado
+                // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
+                $checkout_url = "obrigado.php?from=daven_iori";
+                $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+            }
+            exit;
             break;
+
+
+        // case 'daven_iori':
+        //     $checkout_url = "obrigado.php?from=daven_iori";
+        //     $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+        //     break;
 
         default:
             $checkout_url = "404.php";
