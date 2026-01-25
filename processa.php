@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // header("Location: /obrigado");
 
-                echo "Novo cadastro. " . $check;
+                echo "Novo cadastro. " . $check . $busca_url;
             }
             exit();
             break;
