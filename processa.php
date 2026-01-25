@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $projeto = $_POST['origem'] ?? 'desconhecido';
 
     // Função Mestra para enviar dados para o n8n ou Baserow sem erros de caracteres
-    function enviarDadosJson($url, $dados, $token = null)
+    function enviarDadosJson($url, $dados, $token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi")
     {
         $ch = curl_init($url);
 
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         case 'daven_iori':
             // 1. Configurações da API do Baserow
-            $baserow_token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
+            $token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
             $table_id = "814396"; // ID da tabela Leads VIP
 
             $baserow_url = "https://api.baserow.io/api/database/rows/table/{$table_id}";
@@ -61,13 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // header("Location: https://daveniori.lojavirtualnuvem.com.br");
                 // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
 
-                echo enviarDadosJson($busca_url, [], $baserow_token) . ' registros encontrados. Lead já existe. \n';
+                echo enviarDadosJson($busca_url, [], $token) . ' registros encontrados. Lead já existe. \n';
             } else {
                 // Se não achou, envia para o n8n e depois para a página de obrigado
                 // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
                 // $checkout_url = "obrigado.php?from=daven_iori";
                 // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-                echo enviarDadosJson($busca_url, [], $baserow_token) . ' registros encontrados. Novo lead criado. \n';
+                echo enviarDadosJson($busca_url, [], $token) . ' registros encontrados. Novo lead criado. \n';
 
                 // }
             }
