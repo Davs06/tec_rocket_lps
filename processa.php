@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-            $busca_url = $url . "&filter__email__equal=" . urlencode($email);
+            $busca_url = "https://api.baserow.io/api/database/rows/table/{$table_id}/&filter__email__equal=" . urlencode($email);
             $check = enviarDadosJson($busca_url, [], $token); // GET simulado
             $res = json_decode($check, true);
 
