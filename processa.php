@@ -47,11 +47,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
             $table_id = "814396"; // ID da tabela Leads VIP
 
-            $baserow_url = "https://api.baserow.io/api/database/rows/table/{$table_id}";
+            $url = "https://api.baserow.io/api/database/rows/table/{$table_id}";
 
 
 
-            $busca_url = $baserow_url . "&filter__Email__equal=" . urlencode($email);
+            $busca_url = $url . "&filter__email__equal=" . urlencode($email);
             $check = enviarDadosJson($busca_url, [], $token); // GET simulado
             $res = json_decode($check, true);
 
