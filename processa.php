@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // 2. Filtro de busca (Busca por email OU whatsapp)
             // Usamos o filtro 'filter__field_xxx__contains' conforme a documentação do Baserow
             $query_url = "https://api.baserow.io/api/database/rows/table/{$table_id}/?user_field_names=true&filter__email__equal=" . urlencode($email) . "&filter__phone__equal=" . urlencode($whatsapp) . "&filter_type=OR";
+            $query_url = "https://api.baserow.io/api/database/rows/table/{$table_id}/?user_field_names=true&filters=%7B%22filter_type%22%3A%22AND%22%2C%22filters%22%3A%5B%7B%22type%22%3A%22equal%22%2C%22field%22%3A%22phone%22%2C%22value%22%3A%22" . urldecode($whatsapp) . "%22%7D%2C%7B%22type%22%3A%22equal%22%2C%22field%22%3A%22Email%22%2C%22value%22%3A%22" . urldecode($email) . "%22%7D%5D%2C%22groups%22%3A%5B%5D%7D";
 
             $ch = curl_init($query_url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -54,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // }
             }
-            exit;
+            exit();
             break;
 
 
