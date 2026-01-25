@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (!empty($res['results'])) {
                 // Se achou, vai direto para a loja da Daven & Iori
                 // header("Location: https://daveniori.com.br/");
-                echo "Já cadastrado. Redirecionar para a loja da Daven & Iori." . $check;
+                echo "Já cadastrado. Redirecionar para a loja da Daven & Iori." . $busca_url;
             } else {
                 // Se não achou, salva no Baserow e depois manda pro n8n
                 // $dados = [
@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // header("Location: /obrigado");
 
-                echo "Novo cadastro. " . $check . $busca_url;
+                echo "Novo cadastro. " . $busca_url;
             }
             exit();
             break;
