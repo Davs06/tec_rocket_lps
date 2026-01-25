@@ -2,9 +2,32 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = urlencode($_POST['nome']);
-    $email = urlencode($_POST['email']);
+    $email = urldecode($_POST['email']);
     $whatsapp = $_POST['whatsapp'];
     $projeto = $_POST['origem'] ?? 'desconhecido';
+
+    // Função Mestra para enviar dados para o n8n ou Baserow sem erros de caracteres
+    function enviarDadosJson($url, $dados, $token = null)
+    {
+        $ch = curl_init($url);
+
+        // Transforma o array do PHP em um JSON real (mantendo o @, acentos, etc.)
+        $payload = json_encode($dados);
+
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        // Headers importantes: avisamos que estamos mandando JSON
+        $headers = ['Content-Type: application/json'];
+        if ($token) {
+            $headers[] = "Authorization: Token $token";
+        }
+
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        $result = curl_exec($ch);
+        curl_close($ch);
+        return $result;
+    }
 
 
     // Lógica de Direcionamento e Tags
@@ -24,34 +47,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $baserow_token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
             $table_id = "814396"; // ID da tabela Leads VIP
 
-            // 2. Filtro de busca (Busca por email OU whatsapp)
-            // Usamos o filtro 'filter__field_xxx__contains' conforme a documentação do Baserow
-            $query_url = "https://api.baserow.io/api/database/rows/table/{$table_id}/?user_field_names=true&filter__email__equal=" . urlencode($email) . "&filter__phone__equal=" . urlencode($whatsapp) . "&filter_type=OR";
-            $query_url = "https://api.baserow.io/api/database/rows/table/{$table_id}/?user_field_names=true&filters=%7B%22filter_type%22%3A%22AND%22%2C%22filters%22%3A%5B%7B%22type%22%3A%22equal%22%2C%22field%22%3A%22phone%22%2C%22value%22%3A%22" . urldecode($whatsapp) . "%22%7D%2C%7B%22type%22%3A%22equal%22%2C%22field%22%3A%22Email%22%2C%22value%22%3A%22" . urldecode($email) . "%22%7D%5D%2C%22groups%22%3A%5B%5D%7D";
+            $baserow_url = "https://api.baserow.io/api/database/rows/table/{$table_id}";
 
-            $ch = curl_init($query_url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, [
-                "Authorization: Token $baserow_token"
-            ]);
 
-            $response = curl_exec($ch);
-            $data = json_decode($response, true);
-            curl_close($ch);
 
-            // 3. Lógica de Redirecionamento
+            $busca_url = $baserow_url . "&filter__Email__equal=" . urlencode($email);
+            $check = enviarDadosJson($busca_url, [], $token); // GET simulado
+            $res = json_decode($check, true);
+
+
             if (!empty($data['results'])) {
                 // Se achou registros, o lead já existe -> Direto para a Loja
                 // header("Location: https://daveniori.lojavirtualnuvem.com.br");
                 // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
 
-                echo $data['results'] . ' registros encontrados. Lead já existe. \n' . $query_url;
+                echo enviarDadosJson($busca_url, [], $baserow_token) . ' registros encontrados. Lead já existe. \n';
             } else {
                 // Se não achou, envia para o n8n e depois para a página de obrigado
                 // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
                 // $checkout_url = "obrigado.php?from=daven_iori";
                 // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-                echo $data['results'] . ' registros encontrados. Novo lead criado. \n' . $query_url;
+                echo enviarDadosJson($busca_url, [], $baserow_token) . ' registros encontrados. Novo lead criado. \n';
 
                 // }
             }
