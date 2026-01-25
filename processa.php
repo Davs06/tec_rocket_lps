@@ -56,20 +56,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $res = json_decode($check, true);
 
 
-            if (!empty($data['results'])) {
-                // Se achou registros, o lead já existe -> Direto para a Loja
-                // header("Location: https://daveniori.lojavirtualnuvem.com.br");
-                // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-
-                echo enviarDadosJson($busca_url, [], $token) . ' registros encontrados. Lead já existe. \n';
+            if (!empty($res['results'])) {
+                // Se achou, vai direto para a loja da Daven & Iori
+                // header("Location: https://daveniori.com.br/");
+                echo "Já cadastrado. Redirecionar para a loja da Daven & Iori." . $check;
             } else {
-                // Se não achou, envia para o n8n e depois para a página de obrigado
-                // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
-                // $checkout_url = "obrigado.php?from=daven_iori";
-                // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-                echo enviarDadosJson($busca_url, [], $token) . ' registros encontrados. Novo lead criado. \n';
+                // Se não achou, salva no Baserow e depois manda pro n8n
+                // $dados = [
+                //     "Nome" => $nome,
+                //     "Email" => $email,
+                //     "WhatsApp" => $whatsapp,
+                //     "Origem" => "Site Daven"
+                // ];
+                // enviarDadosJson($baserow_url, $dados, $token);
 
-                // }
+                // // Envia para o Webhook do n8n para disparar o áudio da Taoni
+                // enviarDadosJson("https://n8n.techrocket.site/webhook/vossa-url", $dados);
+
+                // header("Location: /obrigado");
+
+                echo "Novo cadastro. " . $check;
             }
             exit();
             break;
