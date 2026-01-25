@@ -41,13 +41,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // 3. Lógica de Redirecionamento
             if (!empty($data['results'])) {
                 // Se achou registros, o lead já existe -> Direto para a Loja
-                header("Location: https://daveniori.lojavirtualnuvem.com.br");
-                $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+                // header("Location: https://daveniori.lojavirtualnuvem.com.br");
+                // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+                echo "Lead encontrado. Direto para a loja.";
             } else {
                 // Se não achou, envia para o n8n e depois para a página de obrigado
                 // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
-                $checkout_url = "obrigado.php?from=daven_iori";
-                $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+                //     $checkout_url = "obrigado.php?from=daven_iori";
+                //     $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
+                // }
+                echo "Lead não encontrado. Enviar para o webhook e depois para a página de obrigado.";
+                echo $data;
             }
             exit;
             break;
