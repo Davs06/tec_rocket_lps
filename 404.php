@@ -60,12 +60,12 @@
                 <span class="block text-2xl mb-2">⚡</span>
                 <span class="font-bold text-indigo-400 group-hover:text-white">Tech Rocket</span>
             </a>
-            <a href="htpps://daveniori.com.br"
+            <a href="https://daveniori.com.br"
                 class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-yellow-600/20 transition-all group">
                 <span class="block text-2xl mb-2">✨</span>
                 <span class="font-bold text-yellow-400 group-hover:text-white">Daven & Iori</span>
             </a>
-            <a href="https://techrocket.site/ebook-maternidade"
+            <a href="https://techrocket.site/produtos/ebook-maternidade"
                 class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-rose-600/20 transition-all group">
                 <span class="block text-2xl mb-2">🤱</span>
                 <span class="font-bold text-rose-400 group-hover:text-white">Maternidade & Lucro</span>
