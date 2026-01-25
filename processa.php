@@ -44,13 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // header("Location: https://daveniori.lojavirtualnuvem.com.br");
                 // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
 
-                echo $data['results'] . ' registros encontrados. Lead já existe.';
+                echo $data['results'] . ' registros encontrados. Lead já existe. \n' . $query_url;
             } else {
                 // Se não achou, envia para o n8n e depois para a página de obrigado
                 // Aqui você mantém a sua chamada cURL atual para o Webhook do n8n
                 // $checkout_url = "obrigado.php?from=daven_iori";
                 // $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-                echo $data['results'] . ' registros encontrados. Novo lead criado. ';
+                echo $data['results'] . ' registros encontrados. Novo lead criado. \n' . $query_url;
 
                 // }
             }
