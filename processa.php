@@ -6,29 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $whatsapp = $_POST['whatsapp'];
     $projeto = $_POST['origem'] ?? 'desconhecido';
 
-    // Função Mestra para enviar dados para o n8n ou Baserow sem erros de caracteres
-    function enviarDadosJson($url, $dados, $token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi")
-    {
-        $ch = curl_init($url);
-
-        // Transforma o array do PHP em um JSON real (mantendo o @, acentos, etc.)
-        $payload = json_encode($dados);
-
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-        // Headers importantes: avisamos que estamos mandando JSON
-        $headers = ['Content-Type: application/json'];
-        if ($token) {
-            $headers[] = "Authorization: Token $token";
-        }
-
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        $result = curl_exec($ch);
-        curl_close($ch);
-        return $result;
-    }
-
 
     // Lógica de Direcionamento e Tags
     switch ($projeto) {
@@ -43,48 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             break;
 
         case 'daven_iori':
-            // 1. Configurações da API do Baserow
-            $token = "gMzcuJCODtOWV3HHbRjGbIaLZjIbM9Pi";
-            $table_id = "814396"; // ID da tabela Leads VIP
-
-            $url = "https://api.baserow.io/api/database/rows/table/{$table_id}";
-
-
-
-            $busca_url = "https://api.baserow.io/api/database/rows/table/{$table_id}/&filter__email__equal=" . urlencode($email);
-            $check = enviarDadosJson("https://api.baserow.io/api/database/rows/table/{$table_id}/&filter__email__equal=" . urlencode($email), [], $token); // GET simulado
-            $res = json_decode($check, true);
-
-
-            if (!empty($res['results'])) {
-                // Se achou, vai direto para a loja da Daven & Iori
-                // header("Location: https://daveniori.com.br/");
-                echo "Já cadastrado. Redirecionar para a loja da Daven & Iori." . $check;
-            } else {
-                // Se não achou, salva no Baserow e depois manda pro n8n
-                // $dados = [
-                //     "Nome" => $nome,
-                //     "Email" => $email,
-                //     "WhatsApp" => $whatsapp,
-                //     "Origem" => "Site Daven"
-                // ];
-                // enviarDadosJson($baserow_url, $dados, $token);
-
-                // // Envia para o Webhook do n8n para disparar o áudio da Taoni
-                // enviarDadosJson("https://n8n.techrocket.site/webhook/vossa-url", $dados);
-
-                // header("Location: /obrigado");
-
-                echo "Novo cadastro. " . $check;
-            }
-            exit();
+            $checkout_url = "obrigado.php?from=daven_iori";
+            $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
             break;
-
-
-        // case 'daven_iori':
-        //     $checkout_url = "obrigado.php?from=daven_iori";
-        //     $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
-        //     break;
 
         default:
             $checkout_url = "404.php";
