@@ -146,7 +146,7 @@ h1 span {
     color: var(--cinza-texto);
 }
 
-/* Logos Federações */
+/* --- Seção de Logos das Federações --- */
 .fed-logos {
     display: flex;
     justify-content: center;
@@ -156,14 +156,20 @@ h1 span {
     background: var(--branco);
     padding: 40px;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Sombra leve para destacar no Off-White */
 }
 
 .fed-logos img {
-    height: 100px;
+    height: 70px;
+    width: auto;
+    transition: 0.4s;
+    /* No Desktop começam cinzas */
     filter: grayscale(100%);
     opacity: 0.7;
-    transition: 0.4s;
 }
+
+
 
 .fed-logos img:hover {
     filter: grayscale(0%);
@@ -300,5 +306,30 @@ h1 span {
         flex: 1;
         text-align: left;
         padding-left: 20px;
+    }
+}
+
+/* Hover apenas para dispositivos que possuem mouse */
+@media (hover: hover) {
+    .fed-logos img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* --- Ajuste específico para Celular (Mobile) --- */
+@media (max-width: 768px) {
+    .fed-logos {
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    .fed-logos img {
+        /* No celular ficam coloridas e com opacidade total por padrão */
+        filter: grayscale(0%);
+        opacity: 1;
+        height: 55px;
+        /* Reduzi um pouco para caberem melhor lado a lado */
     }
 }
