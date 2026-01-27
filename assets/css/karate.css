@@ -1,0 +1,304 @@
+/* Variáveis de Cores */
+:root {
+    --preto-puro: #000000;
+    --preto-card: #141414;
+    --vermelho: #cc0000;
+    --dourado: #d4af37;
+    --off-white: #f9f9f9;
+    /* Nova variável */
+    --branco: #ffffff;
+    --cinza-texto: #333333;
+    /* Ajustei para um cinza escuro para ler melhor no fundo claro */
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--off-white);
+    /* Aplicando o Off-White */
+    color: var(--preto-puro);
+    /* Texto escuro para fundo claro */
+    line-height: 1.6;
+}
+
+/* Utilitários */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #000 url('../img/material\ m\ braga/alunos.jpeg') center/cover no-repeat;
+    border-bottom: 4px solid var(--vermelho);
+}
+
+.bg-dark,
+footer {
+    color: var(--branco);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.logo-main {
+    max-width: 280px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--branco);
+}
+
+h1 span {
+    color: var(--vermelho);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    color: var(--cinza-texto);
+}
+
+/* Botão CTA */
+.cta-button {
+    display: inline-block;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.cta-button:hover {
+    background-color: var(--branco);
+    color: var(--vermelho);
+    transform: translateY(-3px);
+}
+
+/* Faixa de Slogan */
+.slogan-bar {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos de Seção */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--preto-puro);
+}
+
+.section-title span {
+    color: var(--vermelho);
+}
+
+/* Conteúdo Sobre */
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: var(--cinza-texto);
+}
+
+/* Logos Federações */
+.fed-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.fed-logos img {
+    height: 100px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.fed-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Grade de Horários */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--preto-card);
+    padding: 40px;
+    border-top: 4px solid var(--vermelho);
+    border-radius: 0 0 8px 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border-top-color: var(--dourado);
+}
+
+.card h3 {
+    color: var(--dourado);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.time-slot p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Seção do Mapa */
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: var(--branco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+.map-container {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 0;
+    border: 2px solid var(--vermelho);
+    /* Borda vermelha para manter a identidade */
+}
+
+.map-details {
+    text-align: center;
+    color: var(--preto-puro);
+}
+
+.map-link-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--vermelho);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--vermelho);
+    transition: 0.3s;
+}
+
+.map-link-btn:hover {
+    color: var(--preto-puro);
+    border-bottom-color: var(--preto-puro);
+}
+
+
+/* Footer */
+.footer {
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #222;
+    background-color: var(--preto-puro);
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .fed-logos {
+        gap: 30px;
+        padding: 30px 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .map-wrapper {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .map-container {
+        flex: 2;
+    }
+
+    .map-details {
+        flex: 1;
+        text-align: left;
+        padding-left: 20px;
+    }
+}
