@@ -37,7 +37,7 @@
 
 
 
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+    <nav class="p-6 flex justify-between items-center max-w-10xl mx-auto">
         <div class="flex items-center gap-2">
             <img src="/assets/img/tech_rocket/logotec_rocket.png" alt="Tec Rocket Logo" class="h-12">
             <span class="text-2xl font-bold tracking-tighter">TECH <span class="text-indigo-400">ROCKET</span></span>
@@ -50,7 +50,7 @@
         </div>
     </nav>
 
-    <header class="py-20 px-6 text-center max-w-4xl mx-auto hero-section" data-aos="zoom-in">
+    <header class="py-20 px-6 text-center max-w-10xl mx-auto hero-section" data-aos="zoom-in">
         <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
             Impulsionando Negócios com <span class="gradient-text">Tecnologia e Automação</span>.
         </h1>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="rocket-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-4xl mb-4">⚙️</div>
-                    <h3 class="text-xl font-bold mb-3">Integrações (n8n)</h3>
+                    <h3 class="text-xl font-bold mb-3">Automações (n8n)</h3>
                     <p class="text-slate-400 text-sm">Conectamos as suas ferramentas favoritas para que a tecnologia
                         trabalhe por si.</p>
                 </div>
