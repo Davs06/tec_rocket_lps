@@ -131,6 +131,12 @@
                     <p class="text-slate-400 text-sm">Conectamos as suas ferramentas favoritas para que a tecnologia
                         trabalhe por si.</p>
                 </div>
+                <div class="rocket-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl mb-4">🛍️</div>
+                    <h3 class="text-xl font-bold mb-3">E-commerce (Nuvemshop)</h3>
+                    <p class="text-slate-400 text-sm">Criação de lojas virtuais completas na Nuvemshop, configuradas
+                        para vender desde o primeiro dia.</p>
+                </div>
             </div>
         </div>
     </section>
