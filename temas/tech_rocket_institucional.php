@@ -112,7 +112,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center">Como Podemos <span class="text-indigo-400">Ajudar</span>
             </h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="rocket-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-4xl mb-4">🚀</div>
                     <h3 class="text-xl font-bold mb-3">Landing Pages & Sites</h3>
