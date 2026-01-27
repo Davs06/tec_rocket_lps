@@ -12,7 +12,7 @@ services:
       labels:
         - "traefik.enable=true"
         # Regra de domínios unificada incluindo techrocket.site
-        - "traefik.http.routers.techrocket-lps.rule=Host(`bratzstyle.com.br`) || Host(`daveniori.com.br`) || Host(`techrocket.site`) || Host(`bratz.techrocket.site`) || Host(`loja.techrocket.site`)"
+        - "traefik.http.routers.techrocket-lps.rule=Host(`bratzstyle.com.br`) || Host(`daveniori.com.br`) || Host(`techrocket.site`) || Host(`maternidade.techrocket.site`)"
         - "traefik.http.routers.techrocket-lps.entrypoints=websecure"
         - "traefik.http.routers.techrocket-lps.tls=true"
         - "traefik.http.routers.techrocket-lps.tls.certresolver=letsencryptresolver"

@@ -65,7 +65,7 @@
                 <span class="block text-2xl mb-2">✨</span>
                 <span class="font-bold text-yellow-400 group-hover:text-white">Daven & Iori</span>
             </a>
-            <a href="https://techrocket.site/produtos/ebook-maternidade"
+            <a href="https://maternidade.techrocket.site"
                 class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-rose-600/20 transition-all group">
                 <span class="block text-2xl mb-2">🤱</span>
                 <span class="font-bold text-rose-400 group-hover:text-white">Maternidade & Lucro</span>
