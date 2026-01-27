@@ -18,7 +18,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="/assets/css/techrocket.css">
+    <link rel="stylesheet" href="assets/css/techrocket.css">
+    <link rel="stylesheet" href="assets/css/techrocket.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="/assets/css/mouse_follower.css">
 
     <style>
