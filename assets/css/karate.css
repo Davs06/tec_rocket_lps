@@ -255,11 +255,65 @@ h1 span {
 
 
 /* Footer */
+/* Footer */
 .footer {
     padding: 60px 20px;
     text-align: center;
     border-top: 1px solid #222;
     background-color: var(--preto-puro);
+}
+
+/* --- Logo no Footer --- */
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+.logo-footer {
+    max-width: 180px;
+    /* Um pouco menor que o do topo para manter a elegância */
+    height: auto;
+    /* Se o logo original for escuro, você pode usar um filtro para clarear: */
+    /* filter: brightness(0) invert(1); */
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.logo-footer:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.footer-socials {
+    margin-bottom: 25px;
+}
+
+/* --- Estilo Específico do Link do Insta no Footer --- */
+.social-link {
+    color: var(--branco) !important;
+    /* Garante que o texto seja branco */
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.social-link:hover {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: var(--branco) !important;
+    text-decoration: none !important;
+}
+
+/* Garante que o ícone não mude de cor sozinho */
+.social-link i {
+    color: var(--vermelho);
+    text-decoration: none !important;
 }
 
 .contact-info {

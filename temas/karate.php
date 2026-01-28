@@ -7,6 +7,7 @@
     <title>Instituto M. Braga - Karate Shotokan</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/karate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <img src="/assets/img/material m braga/logo-rmbg.png" alt="Instituto M. Braga" class="logo-main">
             <h1>INSTITUTO <span>M. BRAGA</span></h1>
             <p class="subtitle">AUTÊNTICO KARATE SHOTOKAN | JKS SÃO PAULO</p>
-            <a href="https://wa.me/5511940620222" class="cta-button">Agendar Aula Experimental</a>
+            <a href="https://wa.me/5511940620222" target="_blank" class="cta-button">Agendar Aula Experimental</a>
         </div>
     </header>
 
@@ -89,13 +90,23 @@
     </section>
 
     <footer class="footer">
+        <div class="footer-brand">
+            <img src="assets/img/material m braga/logo-footer.jpeg" alt="Instituto M. Braga" class="logo-footer">
+        </div>
+
         <div class="contact-info">
-            <p><strong>📍 Localização:</strong> Rua Borges Ladário, 68 </p>
-            <p>Parada inglêsa - São Paulo/SP</p>
+            <p><strong>📍 Localização:</strong> Av. Comandante Antonio Paiva Sampaio, 300 - 1º andar</p>
+            <p>Parque Vitória - São Paulo/SP</p>
             <p><strong>📞 Contato:</strong> (11) 94062-0222</p>
         </div>
-        <p class="copyright">&copy; 2026 Instituto M. Braga Karate. Todos os direitos reservados. | Por Tech Rocket .
-        </p>
+
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/institutombraga" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> @institutombraga
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 Instituto M. Braga Karate. Todos os direitos reservados.</p>
     </footer>
 
 </body>
