@@ -1,5 +1,5 @@
 .hero-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('assets/img/material-m-braga/alunos.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/material-m-braga/alunos.jpeg') center/cover no-repeat;
 }
 
 .fed-img {
