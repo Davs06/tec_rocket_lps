@@ -116,6 +116,7 @@
             </a>
         </div>
 
+        <p class="copyright">&copy; 2026 Instituto M. Braga Karate. Todos os direitos reservados. | Por Tech Rocket.</p>
 </body>
 
 </html>
