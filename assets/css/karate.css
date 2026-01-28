@@ -255,7 +255,6 @@ h1 span {
 
 
 /* Footer */
-/* Footer */
 .footer {
     padding: 60px 20px;
     text-align: center;
@@ -309,6 +308,13 @@ h1 span {
     color: var(--branco) !important;
     text-decoration: none !important;
 }
+
+/* Garante que o ícone não mude de cor sozinho */
+.social-link i {
+    color: var(--vermelho);
+    text-decoration: none !important;
+}
+
 
 /* Garante que o ícone não mude de cor sozinho */
 .social-link i {
