@@ -92,7 +92,7 @@
             <div class="map-details">
                 <p><strong>R. Borges Ladário, 68 </strong><br>
                     Tucuruvi, São Paulo - SP<br>
-                    (Próximo à Av. Comandante Antonio Paiva Sampaio)</p>
+                    (Próximo à estação Metrô Parada Inglêsa)</p>
                 <a href="https://maps.app.goo.gl/YyC6hK6zXG4U7UvV7" target="_blank" class="map-link-btn">Ver no Google
                     Maps</a>
             </div>
@@ -105,8 +105,8 @@
         </div>
 
         <div class="contact-info">
-            <p><strong>📍 Localização:</strong> Av. Comandante Antonio Paiva Sampaio, 300 - 1º andar</p>
-            <p>Parque Vitória - São Paulo/SP</p>
+            <p><strong>📍 Localização:</strong> Rua Borges Ladário, 68</p>
+            <p>Parada Inglêsa - São Paulo/SP</p>
             <p><strong>📞 Contato:</strong> (11) 94062-0222</p>
         </div>
 
@@ -115,9 +115,6 @@
                 <i class="fab fa-instagram"></i> @institutombraga
             </a>
         </div>
-
-        <p class="copyright">&copy; 2026 Instituto M. Braga Karate. Todos os direitos reservados.</p>
-    </footer>
 
 </body>
 
