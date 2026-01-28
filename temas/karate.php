@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/karate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="/assets/img/material m braga/favicon-karate/favicon-96x96.png"
+        sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/material m braga/favicon-karate/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/material m braga/favicon-karate/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/assets/img/material m braga/favicon-karate/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Instituto M. Braga" />
+    <link rel="manifest" href="/assets/img/material m braga/favicon-karate/site.webmanifest" />
 </head>
 
 <body>
