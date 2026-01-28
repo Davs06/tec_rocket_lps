@@ -17,6 +17,8 @@ if ($dominio == 'bratzstyle.com.br') {
 } elseif ($dominio == 'daveniori.com.br') {
     $projeto = 'daven_iori';
     $cor_rastro = '#C5A059'; // O dourado que definimos
+} elseif ($dominio == 'karate.techrocket.site') {
+    $projeto = 'karate';
 } else {
     include('404.php');
     exit;
