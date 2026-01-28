@@ -93,8 +93,8 @@
                 <p><strong>R. Borges Ladário, 68 </strong><br>
                     Tucuruvi, São Paulo - SP<br>
                     (Próximo à estação Metrô Parada Inglêsa)</p>
-                <a href="https://maps.app.goo.gl/YyC6hK6zXG4U7UvV7" target="_blank" class="map-link-btn">Ver no Google
-                    Maps</a>
+                <!-- <a href="https://maps.app.goo.gl/YyC6hK6zXG4U7UvV7" target="_blank" class="map-link-btn">Ver no Google
+                    Maps</a> -->
             </div>
         </div>
     </section>
