@@ -101,7 +101,7 @@
 
     <footer class="footer">
         <div class="footer-brand">
-            <img src="/assets/img/material m braga/logo-footer.jpeg" alt="Instituto M. Braga" class="logo-footer">
+            <img src="../assets/img/material m braga/logo-footer.jpeg" alt="Instituto M. Braga" class="logo-footer">
         </div>
 
         <div class="contact-info">
