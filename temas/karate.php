@@ -20,6 +20,7 @@
                         'dojo-black': '#0b0b0b',
                         'dojo-card': '#141414',
                         'off-white': '#f9f9f9',
+                        'preto-puro': '#000000',
                     },
                     fontFamily: {
                         montserrat: ['Montserrat', 'sans-serif'],
@@ -195,7 +196,7 @@
         </div>
     </section>
 
-    <footer class="bg-dojo-black py-16 px-4 text-center border-t border-gray-800">
+    <footer class="bg-preto-puro py-16 px-4 text-center border-t border-gray-800">
         <div class="mb-8">
             <img src="/assets/img/material-m-braga/logo-footer.jpeg" alt="Instituto M. Braga"
                 class="max-w-[180px] mx-auto rounded opacity-90 hover:opacity-100 hover:scale-105 transition-all">
