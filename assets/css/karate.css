@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--off-white);
@@ -88,7 +92,7 @@ h1 span {
     font-size: 1.1rem;
     letter-spacing: 3px;
     margin-top: 10px;
-    color: var(--cinza-texto);
+    color: var(--off-white);
 }
 
 /* Botão CTA */
@@ -253,6 +257,117 @@ h1 span {
     border-bottom-color: var(--preto-puro);
 }
 
+/* -- Cartões de Unidades -- */
+.unit-card {
+    background: var(--branco);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.unit-card:hover {
+    transform: translateY(-5px);
+}
+
+.unit-header {
+    padding: 15px;
+    text-align: center;
+}
+
+.unit-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--branco);
+    font-weight: 800;
+}
+
+.unit-body {
+    padding: 25px;
+    color: var(--preto-puro);
+}
+
+.bg-gold {
+    background-color: var(--dourado);
+}
+
+.bg-red {
+    background-color: var(--vermelho);
+}
+
+.border-gold {
+    border: 2px solid var(--dourado);
+}
+
+.border-red {
+    border: 2px solid var(--vermelho);
+}
+
+.address {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hours {
+    margin-bottom: 20px;
+}
+
+.hours h5 {
+    color: var(--preto-puro);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+/* Estilo da Âncora exclusiva da Sede */
+.link-grade {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(204, 0, 0, 0.05);
+    /* Fundo vermelho bem clarinho */
+    color: var(--vermelho) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid rgba(204, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.link-grade span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Efeito ao passar o mouse */
+.link-grade:hover {
+    background-color: var(--vermelho);
+    color: var(--branco) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(204, 0, 0, 0.2);
+}
+
+.btn-map {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 1px solid var(--preto-puro);
+    color: var(--preto-puro);
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-map:hover {
+    background: var(--preto-puro);
+    color: var(--branco);
+}
 
 /* Footer */
 .footer {

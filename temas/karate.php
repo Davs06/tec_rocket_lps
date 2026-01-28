@@ -18,6 +18,11 @@
         href="/assets/img/material-m-braga/favicon-karate/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Instituto M. Braga" />
     <link rel="manifest" href="/assets/img/material-m-braga/favicon-karate/site.webmanifest" />
+
+    <!-- <meta property="og:image" content="https://karate.techrocket.site/assets/img/logo-rmbg.png"> -->
+    <meta property="og:title" content="Instituto M. Braga - Karate Shotokan">
+    <meta name="description"
+        content="Instituto M. Braga Karate Shotokan no Tucuruvi. Treine com o Sensei Marcelo Braga. Disciplina e tradição JKS.">
 </head>
 
 <body>
@@ -27,7 +32,7 @@
         <div class="header-content">
             <img src="/assets/img/material-m-braga/logo-rmbg.png" alt="Instituto M. Braga" class="logo-main">
             <h1>INSTITUTO <span>M. BRAGA</span></h1>
-            <p class="subtitle">AUTÊNTICO KARATE SHOTOKAN | JKS SÃO PAULO</p>
+            <p class="subtitle"> KARATE SHOTOKAN | JKS SÃO PAULO</p>
             <a href="https://wa.me/5511940620222" target="_blank" class="cta-button">Agendar Aula Experimental</a>
         </div>
     </header>
@@ -93,9 +98,63 @@
                 <p><strong>R. Borges Ladário, 68 </strong><br>
                     Tucuruvi, São Paulo - SP<br>
                     (Próximo à estação Metrô Parada Inglêsa)</p>
-                <!-- <a href="https://maps.app.goo.gl/YyC6hK6zXG4U7UvV7" target="_blank" class="map-link-btn">Ver no Google
-                    Maps</a> -->
+                <a href="https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi" target="_blank"
+                    class="map-link-btn">Ver no Google
+                    Maps</a>
             </div>
+        </div>
+    </section>
+
+    <section id="unidades" class="container py-5">
+        <h2 class="section-title">ONDE <span>TREINAR</span></h2>
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6">
+                <div class="unit-card border-gold">
+                    <div class="unit-header bg-gold">
+                        <h3>UNIDADE SEDE</h3>
+                    </div>
+                    <div class="unit-body">
+                        <p class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Rua Borges Ladário, 68</strong><br>
+                            Tucuruvi, São Paulo - SP<br>
+                            <small>(Próximo à Estação Parada Inglesa do Metrô)</small>
+                        </p>
+                        <div class="hours">
+                            <h5>Horários:</h5>
+                            <a href="#horarios" class="link-grade">
+                                <span>Nossos horarios acima ⤴️</span>
+                            </a>
+                        </div>
+                        <a href="https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi" target="_blank"
+                            class="btn-map">Ver no Mapa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="unit-card border-red">
+                    <div class="unit-header bg-red">
+                        <h3>FILIAL - JP ORIENTAL</h3>
+                    </div>
+                    <div class="unit-body">
+                        <p class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Av. Júlio Buono, 2028</strong><br>
+                            Vila Gustavo, São Paulo - SP<br>
+                            <small>(Dentro do Centro de Treinamento JP)</small>
+                        </p>
+                        <div class="hours">
+                            <h5>Horários do Karatê:</h5>
+                            <p><strong>Segunda, Quarta e Sexta:</strong><br>18h15 às 19h15</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Avenida+Júlio+Buono+2028+Vila+Gustavo" target="_blank"
+                            class="btn-map">Ver no Mapa</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
