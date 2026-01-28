@@ -43,7 +43,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #000 url('../img/material\ m\ braga/alunos.jpeg') center/cover no-repeat;
+    background: #000 url('../img/material-m-braga/alunos.jpeg') center/cover no-repeat;
     border-bottom: 4px solid var(--vermelho);
 }
 

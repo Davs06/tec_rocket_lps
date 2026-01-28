@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/karate.css?v=<?php echo time(); ?>">
 
-    <link rel="icon" type="image/png" href="/assets/img/material m braga/favicon-karate/favicon-96x96.png"
+    <link rel="icon" type="image/png" href="/assets/img/material-m-braga/favicon-karate/favicon-96x96.png"
         sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/material m braga/favicon-karate/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/material m braga/favicon-karate/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/material-m-braga/favicon-karate/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/material-m-braga/favicon-karate/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180"
-        href="/assets/img/material m braga/favicon-karate/apple-touch-icon.png" />
+        href="/assets/img/material-m-braga/favicon-karate/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Instituto M. Braga" />
-    <link rel="manifest" href="/assets/img/material m braga/favicon-karate/site.webmanifest" />
+    <link rel="manifest" href="/assets/img/material-m-braga/favicon-karate/site.webmanifest" />
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <header class="hero">
         <div class="overlay"></div>
         <div class="header-content">
-            <img src="/assets/img/material m braga/logo-rmbg.png" alt="Instituto M. Braga" class="logo-main">
+            <img src="/assets/img/material-m-braga/logo-rmbg.png" alt="Instituto M. Braga" class="logo-main">
             <h1>INSTITUTO <span>M. BRAGA</span></h1>
             <p class="subtitle">AUTÊNTICO KARATE SHOTOKAN | JKS SÃO PAULO</p>
             <a href="https://wa.me/5511940620222" target="_blank" class="cta-button">Agendar Aula Experimental</a>
@@ -45,9 +45,9 @@
         </div>
 
         <div class="fed-logos">
-            <img src="/assets/img/material m braga/jks.jpeg" alt="JKS São Paulo">
-            <img src="/assets/img/material m braga/fpk.jpeg" alt="FPK">
-            <img src="/assets/img/material m braga/cbk.png" alt="CBK">
+            <img src="/assets/img/material-m-braga/jks.jpeg" alt="JKS São Paulo">
+            <img src="/assets/img/material-m-braga/fpk.jpeg" alt="FPK">
+            <img src="/assets/img/material-m-braga/cbk.png" alt="CBK">
         </div>
     </section>
 
@@ -101,7 +101,7 @@
 
     <footer class="footer">
         <div class="footer-brand">
-            <img src="../assets/img/material m braga/logo-footer.jpeg" alt="Instituto M. Braga" class="logo-footer">
+            <img src="/assets/img/material-m-braga/logo-footer.jpeg" alt="Instituto M. Braga" class="logo-footer">
         </div>
 
         <div class="contact-info">
@@ -117,6 +117,7 @@
         </div>
 
         <p class="copyright">&copy; 2026 Instituto M. Braga Karate. Todos os direitos reservados. | Por Tech Rocket.</p>
+    </footer>
 </body>
 
 </html>
