@@ -86,7 +86,8 @@
                 </div>
                 <p class="text-slate-400 mb-6 text-sm">Um guia estratégico focado em mães que buscam independência
                     financeira através do digital.</p>
-                <a href="/produtos/ebook-maternidade" class="text-indigo-400 font-bold hover:underline">Ver Projeto
+                <a href="https://maternidade.techrocket.site" class="text-indigo-400 font-bold hover:underline">Ver
+                    Projeto
                     →</a>
 
             </div>
