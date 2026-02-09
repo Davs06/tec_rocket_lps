@@ -15,7 +15,7 @@ services:
         - "traefik.http.routers.techrocket-lps.rule=Host(`bratzstyle.com.br`) || Host(`daveniori.com.br`) || Host(`techrocket.site`) || Host(`maternidade.techrocket.site`) || Host(`karate.techrocket.site`)"
         - "traefik.http.routers.techrocket-lps.entrypoints=websecure"
         - "traefik.http.routers.techrocket-lps.tls=true"
-        - "traefik.http.routers.techrocket-lps.tls.certresolver=letsencryptresolver"
+        - "traefik.http.routers.techrocket-lps.tls.certresolver=le"
         # Essencial no Swarm para o Traefik encontrar a porta do Apache
         - "traefik.http.services.techrocket-lps.loadbalancer.server.port=80"
 
