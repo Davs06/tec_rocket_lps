@@ -1,3 +1,7 @@
+<?php
+require_once 'data.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
 
@@ -11,23 +15,23 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'dojo-red': '#cc0000',
-                        'dojo-gold': '#d4af37',
-                        'dojo-black': '#0b0b0b',
-                        'dojo-card': '#141414',
-                        'off-white': '#f9f9f9',
-                        'preto-puro': '#000000',
-                    },
-                    fontFamily: {
-                        montserrat: ['Montserrat', 'sans-serif'],
-                    }
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'dojo-red': '#cc0000',
+                    'dojo-gold': '#d4af37',
+                    'dojo-black': '#0b0b0b',
+                    'dojo-card': '#141414',
+                    'off-white': '#f9f9f9',
+                    'preto-puro': '#000000',
+                },
+                fontFamily: {
+                    montserrat: ['Montserrat', 'sans-serif'],
                 }
             }
         }
+    }
     </script>
 
     <link rel="stylesheet" href="/assets/css/karate.css">
@@ -114,6 +118,94 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="professores" class="bg-white py-20 px-4">
+        <div class="max-w-[1100px] mx-auto">
+            <h2 class="text-4xl font-black text-center uppercase mb-12">NOSSO <span class="text-dojo-red">MESTRE</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <div class="instructor-card group relative overflow-hidden rounded-lg shadow-xl">
+                    <img src="assets/img/material-m-braga/senei-marcelo.jpeg" alt="Sensei Marcelo Braga"
+                        class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="instructor-overlay absolute inset-0 flex flex-col justify-end p-8 text-white">
+                        <h3 class="text-3xl font-black uppercase tracking-tighter">Marcelo Braga</h3>
+                        <p class="text-dojo-gold font-bold uppercase tracking-widest text-sm mb-2">Sensei Chefe - 5º Dan
+                        </p>
+                        <div class="h-1 w-20 bg-dojo-red mb-4 transition-all duration-300 group-hover:w-full"></div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div
+                        class="inline-block bg-dojo-red text-white text-xs font-black px-3 py-1 uppercase tracking-widest rounded">
+                        Liderança Técnica</div>
+                    <h4 class="text-3xl font-black text-dojo-black uppercase">Tradição e Disciplina</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Com décadas de dedicação ao Karate Shotokan, o **Sensei Marcelo Braga** é a referência técnica
+                        do nosso Dojo. Filiado à JKS (Japan Karate Shoto Federation), a sua metodologia foca não apenas
+                        no desenvolvimento físico, mas na formação do caráter e na preservação da essência marcial
+                        japonesa.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 font-bold text-dojo-black">
+                            <i class="fas fa-check-circle text-dojo-red"></i> Especialista em Karate Shotokan JKS
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-dojo-black">
+                            <i class="fas fa-check-circle text-dojo-red"></i> Formador de Atletas de Alto Rendimento
+                        </li>
+                        <!-- <li class="flex items-center gap-3 font-bold text-dojo-black">
+                            <i class="fas fa-check-circle text-dojo-red"></i> Árbitro Nacional e Internacional
+                        </li> -->
+                    </ul>
+                    <div class="pt-6">
+                        <a href="https://www.instagram.com/institutombraga" target="_blank"
+                            class="text-dojo-black hover:text-dojo-red transition-colors text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="max-w-[1100px] mx-auto py-20 px-4">
+        <h2 class="text-4xl font-black text-center uppercase mb-12">Nossa <span class="text-dojo-red">Equipe</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <?php foreach ($professores as $profe): ?>
+            <div class="instructor-card group bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="relative h-72 overflow-hidden">
+                    <img src="<?php echo $profe['foto']; ?>" alt="<?php echo $profe['nome']; ?>"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute top-4 left-4 z-10">
+                        <span
+                            class="tag-label bg-dojo-red text-white px-3 py-1 text-xs font-black uppercase tracking-widest rounded">
+                            <?php echo $profe['cargo']; ?>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b-4 border-transparent group-hover:border-dojo-red transition-all">
+                    <h4 class="text-xl font-black uppercase text-dojo-black"><?php echo $profe['nome']; ?></h4>
+                    <p class="text-xs text-dojo-gold font-bold mb-3 tracking-widest">
+                        <?php echo $profe['graduacao']; ?>
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        <?php echo $profe['bio']; ?>
+                    </p>
+
+                    <a href="https://instagram.com/<?php echo $profe['insta']; ?>" target="_blank"
+                        class="text-gray-400 hover:text-dojo-red transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <?php endforeach; ?>
         </div>
     </section>
 

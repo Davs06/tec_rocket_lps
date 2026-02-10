@@ -8,6 +8,77 @@
     transition: 0.4s;
 }
 
+/* Efeito de Overlay Gradiente para o Nome do Professor */
+.instructor-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 100%);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.instructor-card:hover .instructor-overlay {
+    opacity: 1;
+}
+
+/* Estilo para a bordinha de destaque no hover */
+.instructor-card {
+    border-bottom: 5px solid var(--vermelho);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.instructor-card:hover {
+    border-bottom-color: var(--dourado);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para os cards da equipe */
+.staff-card {
+    transition: all 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.staff-tag {
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 0px var(--preto-puro);
+}
+
+/* Ajuste no título da seção para dar contraste */
+.tracking-widest {
+    letter-spacing: 0.2em;
+}
+
+/* Estilização dos Rótulos (Tags) */
+.tag-label {
+    @apply text-[10px] font-black uppercase px-3 py-1 text-white shadow-sm;
+}
+
+.tag-red {
+    @apply bg-dojo-red;
+}
+
+.tag-dark {
+    @apply bg-dojo-black;
+}
+
+/* Overlay suave para a foto não ficar chapada */
+.instructor-minimal-overlay {
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 30%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+/* Comportamento do Card no Hover */
+.instructor-card {
+    @apply transition-all duration-300;
+}
+
+.instructor-card:hover {
+    @apply -translate-y-2 shadow-2xl;
+}
+
+
 @media (hover: hover) {
     .fed-img:hover {
         filter: grayscale(0%);
