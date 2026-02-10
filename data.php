@@ -103,7 +103,7 @@ $unidades = [
         "referencia" => "(Academia Alex fitines)",
         "link_maps" => "https://www.google.com/maps/place/R.+Rio+de+Janeiro,+201+-+Ch%C3%A1cara+do+Solar+I+(Fazendinha),+Santana+de+Parna%C3%ADba+-+SP,+06530-020/@-23.4083489,-46.8869091,3a,75y,78.32h,74.73t/data=!3m7!1e1!3m5!1sSp9vLkN53qPp1yDPbMM92Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D15.272108086836838%26panoid%3DSp9vLkN53qPp1yDPbMM92Q%26yaw%3D78.31679221880506!7i16384!8i8192!4m5!3m4!1s0x94cf1c8a354bba5f:0xebf83ac953783c81!8m2!3d-23.4080847!4d-46.8872996?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D",
         "is_sede" => false,
-        "horarios" => "Segunda, Quarta e Sexta:<br>18h15 às 19h15"
+        "horarios" => "Segunda e Quarta :<br>19h30 às 21h"
     ],
     // ... próximas unidades
 ];
