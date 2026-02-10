@@ -177,31 +177,27 @@ require_once 'data.php';
     <section id="equipe" class="max-w-[1100px] mx-auto py-20 px-4">
         <h2 class="text-4xl font-black text-center uppercase mb-12">Nossa <span class="text-dojo-red">Equipe</span>
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <?php foreach ($professores as $profe): ?>
-            <div class="instructor-card group bg-white rounded-lg overflow-hidden shadow-md">
+        <div id="professores-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            <?php foreach ($professores as $index => $profe):
+                // Se o índice for maior que 2 (0, 1, 2 são os 3 primeiros), adicionamos classes para esconder
+                $hiddenClass = ($index > 2) ? 'hidden-instructor hidden' : '';
+            ?>
+            <div class="instructor-card group bg-white rounded-lg overflow-hidden shadow-md <?= $hiddenClass ?>">
                 <div class="relative h-72 overflow-hidden">
-                    <img src="<?php echo $profe['foto']; ?>" alt="<?php echo $profe['nome']; ?>"
+                    <img src="<?= $profe['foto'] ?>" alt="<?= $profe['nome'] ?>"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute top-4 left-4 z-10">
                         <span
-                            class="tag-label bg-dojo-red text-white px-3 py-1 text-xs font-black uppercase tracking-widest rounded">
-                            <?php echo $profe['cargo']; ?>
-                        </span>
+                            class="tag-label bg-dojo-red text-white px-3 py-1 text-xs font-black uppercase tracking-widest rounded"><?= $profe['cargo'] ?></span>
                     </div>
                 </div>
 
                 <div class="p-6 border-b-4 border-transparent group-hover:border-dojo-red transition-all">
-                    <h4 class="text-xl font-black uppercase text-dojo-black"><?php echo $profe['nome']; ?></h4>
-                    <p class="text-xs text-dojo-gold font-bold mb-3 tracking-widest">
-                        <?php echo $profe['graduacao']; ?>
-                    </p>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        <?php echo $profe['bio']; ?>
-                    </p>
-
-                    <a href="https://instagram.com/<?php echo $profe['insta']; ?>" target="_blank"
-                        class="text-gray-400 hover:text-dojo-red transition-colors">
+                    <h4 class="text-xl font-black uppercase text-dojo-black"><?= $profe['nome'] ?></h4>
+                    <p class="text-xs text-dojo-gold font-bold mb-3 tracking-widest"><?= $profe['graduacao'] ?></p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4"><?= $profe['bio'] ?></p>
+                    <a href="https://instagram.com/<?= $profe['insta'] ?>" target="_blank"
+                        class="text-gray-400 hover:text-dojo-red transition-colors text-xl">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -240,14 +236,15 @@ require_once 'data.php';
         </div>
     </section>
 
-    <section id="unidades" class="max-w-[1100px] mx-auto py-20 px-4">
+    <section id="unidades" class="max-w-[1100px] mx-auto py-20 px-4 text-center">
         <h2 class="text-4xl font-black text-center uppercase mb-12">Onde <span class="text-dojo-red">Treinar</span></h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="unidades-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             <?php foreach ($unidades as $idx => $un):
                 $isSede = $un['is_sede'];
                 $borderColor = $isSede ? 'border-dojo-gold' : 'border-dojo-red';
                 $headerColor = $isSede ? 'bg-dojo-gold' : 'bg-dojo-red';
+                // Lógica de exibição: esconde após o 3º item
                 $hiddenClass = ($idx > 2) ? 'hidden-unidade hidden' : '';
             ?>
             <div
@@ -288,6 +285,12 @@ require_once 'data.php';
             <?php endforeach; ?>
         </div>
 
+        <?php if (count($unidades) > 3): ?>
+        <button id="btn-ver-mais-unidades"
+            class="mt-12 inline-block bg-dojo-black text-white px-10 py-4 font-black uppercase tracking-widest hover:bg-dojo-red transition-all shadow-lg cursor-pointer">
+            Ver Todas as Unidades
+        </button>
+        <?php endif; ?>
     </section>
 
     <footer class="bg-preto-puro py-16 px-4 text-center border-t border-gray-800">
@@ -315,31 +318,28 @@ require_once 'data.php';
     </footer>
 
     <script>
+    // Lógica para Professores
     document.getElementById('btn-ver-mais')?.addEventListener('click', function() {
         const hiddenCards = document.querySelectorAll('.hidden-instructor');
-
         hiddenCards.forEach(card => {
             card.classList.remove('hidden');
-            // Adicionando um pequeno delay para uma animação de fade-in se desejar
             setTimeout(() => {
                 card.style.opacity = '1';
             }, 10);
         });
-
-        // Esconde o botão após mostrar todos
         this.classList.add('hidden');
+    });
 
-        // Lógica para o botão Ver Mais das Unidades
-        document.getElementById('btn-ver-mais-unidades')?.addEventListener('click', function() {
-            const cards = document.querySelectorAll('.hidden-unidade');
-            cards.forEach(card => {
-                card.classList.remove('hidden');
-                setTimeout(() => {
-                    card.style.opacity = '1';
-                }, 10);
-            });
-            this.classList.add('hidden');
+    // Lógica para Unidades (Independente)
+    document.getElementById('btn-ver-mais-unidades')?.addEventListener('click', function() {
+        const cards = document.querySelectorAll('.hidden-unidade');
+        cards.forEach(card => {
+            card.classList.remove('hidden');
+            setTimeout(() => {
+                card.style.opacity = '1';
+            }, 10);
         });
+        this.classList.add('hidden');
     });
     </script>
 

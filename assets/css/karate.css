@@ -97,6 +97,18 @@
     border-color: var(--dourado-sede) !important;
 }
 
+/* Transição para os itens revelados pelo botão Ver Mais */
+.hidden-unidade,
+.hidden-instructor {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Garante que o card tenha um tamanho mínimo para alinhamento sem fotos */
+.unidade-card {
+    min-height: 420px;
+}
+
 
 @media (hover: hover) {
     .fed-img:hover {
