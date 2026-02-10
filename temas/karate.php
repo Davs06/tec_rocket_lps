@@ -145,7 +145,8 @@ require_once 'data.php';
                         Liderança Técnica</div>
                     <h4 class="text-3xl font-black text-dojo-black uppercase">Tradição e Disciplina</h4>
                     <p class="text-gray-600 leading-relaxed">
-                        Com décadas de dedicação ao Karate Shotokan, o **Sensei Marcelo Braga** é a referência técnica
+                        Com décadas de dedicação ao Karate Shotokan, o <strong> Sensei Marcelo Braga</strong> é a
+                        referência técnica
                         do nosso Dojo. Filiado à JKS (Japan Karate Shoto Federation), a sua metodologia foca não apenas
                         no desenvolvimento físico, mas na formação do caráter e na preservação da essência marcial
                         japonesa.
@@ -232,60 +233,54 @@ require_once 'data.php';
         </div>
     </section>
 
-    <section id="unidades" class="max-w-[1100px] mx-auto pb-20 px-4">
-        <h2 class="text-4xl font-black text-center uppercase mb-10">ONDE <span class="text-dojo-red">TREINAR</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id="unidades" class="max-w-[1100px] mx-auto py-20 px-4">
+        <h2 class="text-4xl font-black text-center uppercase mb-12">Onde <span class="text-dojo-red">Treinar</span></h2>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <?php foreach ($unidades as $idx => $un):
+                $isSede = $un['is_sede'];
+                $borderColor = $isSede ? 'border-dojo-gold' : 'border-dojo-red';
+                $headerColor = $isSede ? 'bg-dojo-gold' : 'bg-dojo-red';
+                $hiddenClass = ($idx > 2) ? 'hidden-unidade hidden' : '';
+            ?>
             <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-dojo-gold hover:-translate-y-2 transition-all">
-                <div class="bg-dojo-gold p-4 text-center">
-                    <h3 class="text-white font-black text-lg">UNIDADE SEDE</h3>
+                class="unidade-card flex flex-col bg-white rounded-lg shadow-md border-2 <?= $borderColor ?> overflow-hidden transition-all duration-300 hover:-translate-y-2 <?= $hiddenClass ?>">
+
+                <div class="<?= $headerColor ?> p-4 text-center">
+                    <h3 class="text-white font-black uppercase text-xl tracking-tight"><?= $un['nome'] ?></h3>
                 </div>
-                <div class="p-8">
-                    <p class="mb-5 leading-tight">
-                        <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
-                        <strong>Rua Borges Ladário, 68</strong><br>
-                        <span class="text-gray-600">Tucuruvi, São Paulo - SP</span><br>
-                        <small class="text-gray-400">(Próximo à Estação Parada Inglesa)</small>
-                    </p>
-                    <div class="mb-5">
-                        <h5 class="text-xs font-black uppercase tracking-widest mb-2">Horários:</h5>
-                        <a href="#horarios"
-                            class="inline-flex items-center gap-2 bg-red-50 text-dojo-red px-4 py-2 rounded font-bold text-sm border border-red-100 hover:bg-dojo-red hover:text-white transition-all">
-                            <span>Nossos horários acima ⤴️</span>
-                        </a>
+
+                <div class="p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-gray-800 mb-6 leading-snug">
+                            <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
+                            <strong class="text-lg"><?= $un['endereco'] ?></strong><br>
+                            <span class="text-gray-600"><?= $un['bairro'] ?></span><br>
+                            <small class="text-gray-400 italic"><?= $un['referencia'] ?></small>
+                        </p>
+
+                        <div class="mb-8">
+                            <h5 class="text-xs font-black uppercase tracking-widest text-black mb-3">Horários:</h5>
+                            <?php if ($isSede): ?>
+                            <a href="#horarios"
+                                class="inline-flex items-center gap-2 bg-red-50 text-dojo-red px-4 py-2 rounded-md font-bold text-sm border border-red-100 hover:bg-dojo-red hover:text-white transition-all">
+                                Nossos horários acima ⤴️
+                            </a>
+                            <?php else: ?>
+                            <p class="text-sm font-bold text-gray-700 leading-relaxed"><?= $un['horarios'] ?></p>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                    <a href="https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi" target="_blank"
-                        class="block text-center border-2 border-dojo-black py-2 rounded font-black text-sm uppercase hover:bg-dojo-black hover:text-white transition-all">
+
+                    <a href="<?= $un['link_maps'] ?>" target="_blank"
+                        class="block text-center border-2 border-black py-2 rounded-md font-black text-sm uppercase hover:bg-black hover:text-white transition-all">
                         Ver no Mapa
                     </a>
                 </div>
             </div>
-
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-dojo-red hover:-translate-y-2 transition-all">
-                <div class="bg-dojo-red p-4 text-center">
-                    <h3 class="text-white font-black text-lg">FILIAL - JP ORIENTAL</h3>
-                </div>
-                <div class="p-8">
-                    <p class="mb-5 leading-tight">
-                        <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
-                        <strong>Av. Júlio Buono, 2028</strong><br>
-                        <span class="text-gray-600">Vila Gustavo, São Paulo - SP</span><br>
-                        <small class="text-gray-400">(Dentro do Centro de Treinamento JP)</small>
-                    </p>
-                    <div class="mb-5">
-                        <h5 class="text-xs font-black uppercase tracking-widest mb-2">Horários do Karatê:</h5>
-                        <p class="font-bold text-sm">Segunda, Quarta e Sexta:<br><span class="font-normal">18h15 às
-                                19h15</span></p>
-                    </div>
-                    <a href="https://maps.google.com/?q=Avenida+Júlio+Buono+2028+Vila+Gustavo" target="_blank"
-                        class="block text-center border-2 border-dojo-black py-2 rounded font-black text-sm uppercase hover:bg-dojo-black hover:text-white transition-all">
-                        Ver no Mapa
-                    </a>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
+
     </section>
 
     <footer class="bg-preto-puro py-16 px-4 text-center border-t border-gray-800">
@@ -311,6 +306,35 @@ require_once 'data.php';
             © 2026 Instituto M. Braga Karate. Todos os direitos reservados. | Por Tech Rocket.
         </p>
     </footer>
+
+    <script>
+    document.getElementById('btn-ver-mais')?.addEventListener('click', function() {
+        const hiddenCards = document.querySelectorAll('.hidden-instructor');
+
+        hiddenCards.forEach(card => {
+            card.classList.remove('hidden');
+            // Adicionando um pequeno delay para uma animação de fade-in se desejar
+            setTimeout(() => {
+                card.style.opacity = '1';
+            }, 10);
+        });
+
+        // Esconde o botão após mostrar todos
+        this.classList.add('hidden');
+
+        // Lógica para o botão Ver Mais das Unidades
+        document.getElementById('btn-ver-mais-unidades')?.addEventListener('click', function() {
+            const cards = document.querySelectorAll('.hidden-unidade');
+            cards.forEach(card => {
+                card.classList.remove('hidden');
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                }, 10);
+            });
+            this.classList.add('hidden');
+        });
+    });
+    </script>
 
 </body>
 

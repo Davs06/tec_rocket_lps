@@ -78,6 +78,25 @@
     @apply -translate-y-2 shadow-2xl;
 }
 
+/* karate.css */
+.unidade-card {
+    min-height: 420px;
+    /* Garante alinhamento visual sem as fotos */
+}
+
+/* Ajuste na cor dourada para ficar idêntica à imagem que mandaste */
+:root {
+    --dourado-sede: #d4af37;
+}
+
+.bg-dojo-gold {
+    background-color: var(--dourado-sede) !important;
+}
+
+.border-dojo-gold {
+    border-color: var(--dourado-sede) !important;
+}
+
 
 @media (hover: hover) {
     .fed-img:hover {
