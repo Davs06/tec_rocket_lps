@@ -158,9 +158,9 @@ require_once 'data.php';
                         <li class="flex items-center gap-3 font-bold text-dojo-black">
                             <i class="fas fa-check-circle text-dojo-red"></i> Formador de Atletas de Alto Rendimento
                         </li>
-                        <!-- <li class="flex items-center gap-3 font-bold text-dojo-black">
-                            <i class="fas fa-check-circle text-dojo-red"></i> Árbitro Nacional e Internacional
-                        </li> -->
+                        <li class="flex items-center gap-3 font-bold text-dojo-black">
+                            <i class="fas fa-check-circle text-dojo-red"></i> Tecnico da Seleção Paulista de Karate
+                        </li>
                     </ul>
                     <div class="pt-6">
                         <a href="https://www.instagram.com/institutombraga" target="_blank"
@@ -208,6 +208,13 @@ require_once 'data.php';
             </div>
             <?php endforeach; ?>
         </div>
+
+        <?php if (count($professores) > 3): ?>
+        <button id="btn-ver-mais"
+            class="mt-12 inline-block border-2 border-dojo-black text-dojo-black px-8 py-3 font-black uppercase tracking-widest hover:bg-dojo-black hover:text-white transition-all">
+            Ver Mais Professores
+        </button>
+        <?php endif; ?>
     </section>
 
     <section id="localizacao" class="max-w-[1100px] mx-auto py-20 px-4">
