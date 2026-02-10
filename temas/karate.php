@@ -213,10 +213,11 @@ require_once 'data.php';
         <?php endif; ?>
     </section>
 
-    <section id="localizacao" class="max-w-[1100px] mx-auto py-20 px-4">
+    <section id="localizacao" class="bg-white py-20 px-4">
         <h2 class="text-4xl font-black text-center uppercase mb-10 text-dojo-black">NOSSA <span
                 class="text-dojo-red">LOCALIZAÇÃO</span></h2>
-        <div class="flex flex-col lg:flex-row gap-8 bg-white p-5 rounded-lg shadow-md border border-gray-200">
+        <div
+            class="flex flex-col lg:flex-row gap-8 p-5 rounded-lg shadow-md border border-gray-200 max-w-[1100px] mx-auto py-20 px-4">
             <div class="lg:flex-[2] rounded overflow-hidden border-2 border-dojo-red">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.814324151213!2d-46.605944523773194!3d-23.48536525791784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7c085186943%3A0xb592aa3008c9f115!2sInstituto%20M.%20Braga%20Karate!5e0!3m2!1spt-BR!2sbr!4v1706220000000!5m2!1spt-BR!2sbr"
