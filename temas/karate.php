@@ -133,7 +133,7 @@ require_once 'data.php';
                         class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="instructor-overlay absolute inset-0 flex flex-col justify-end p-8 text-white">
                         <h3 class="text-3xl font-black uppercase tracking-tighter">Marcelo Braga</h3>
-                        <p class="text-dojo-gold font-bold uppercase tracking-widest text-sm mb-2">Sensei Chefe - 5º Dan
+                        <p class="text-dojo-gold font-bold uppercase tracking-widest text-sm mb-2">Sensei Chefe - 4º Dan
                         </p>
                         <div class="h-1 w-20 bg-dojo-red mb-4 transition-all duration-300 group-hover:w-full"></div>
                     </div>
