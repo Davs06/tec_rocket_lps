@@ -4,7 +4,7 @@ services:
   techrocket-lps:
     image: davs933/techrocket-lps:main
     networks:
-      - traefik_public
+      - web
     deploy:
       placement:
         constraints:
@@ -20,5 +20,5 @@ services:
         - "traefik.http.services.techrocket-lps.loadbalancer.server.port=80"
 
 networks:
-  traefik_public:
+  web:
     external: true
