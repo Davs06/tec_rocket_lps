@@ -101,8 +101,8 @@ require_once 'data.php';
         </div>
 
         <div class="flex flex-wrap justify-center items-center gap-12 bg-white p-10 rounded-lg shadow-sm">
-            <img src="/assets/img/material-m-braga/jks.webp" alt="JKS" class="fed-img h-16 md:h-20">
-            <img src="/assets/img/material-m-braga/fpk.webp" alt="FPK" class="fed-img h-16 md:h-20">
+            <img src="/assets/img/material-m-braga/jkss.webp" alt="JKS" class="fed-img h-16 md:h-20">
+            <img src="/assets/img/material-m-braga/fpkk.webp" alt="FPK" class="fed-img h-16 md:h-20">
             <img src="/assets/img/material-m-braga/cbk.webp" alt="CBK" class="fed-img h-16 md:h-20">
         </div>
     </section>
@@ -314,7 +314,7 @@ require_once 'data.php';
 
     <footer class="bg-preto-puro py-16 px-4 text-center border-t border-gray-800">
         <div class="mb-8">
-            <img src="/assets/img/material-m-braga/logo-footer.webp" alt="Instituto M. Braga"
+            <img src="/assets/img/material-m-braga/logo-footerr.webp" alt="Instituto M. Braga"
                 class="max-w-[180px] mx-auto rounded opacity-90 hover:opacity-100 hover:scale-105 transition-all">
         </div>
 
