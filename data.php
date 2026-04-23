@@ -79,6 +79,16 @@ $unidades = [
         "horarios" => "Segunda, Quarta e Sexta:<br>18h15 às 19h15"
     ],
     [
+
+        "nome" => "Filial - Centro de Treinamento Malta Marcial Artes",
+        "endereco" => "Na rua Capricho, 1264",
+        "bairro" => "Parque Vitória , São Paulo - SP",
+        "referencia" => "(Dentro do Centro de Treinamento Malta Marcial Artes",
+        "link_maps" => "https://www.google.com/maps/place/Malta+Martial+Arts/@-23.4764244,-46.5947124,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef7003b2615d5:0xae46c8f343f81617!8m2!3d-23.4764244!4d-46.5947124!16s%2Fg%2F11z2cgh875?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D",
+        "is_sede" => false,
+        "horarios" => "Segunda, Quarta e Sexta:<br>18h30 às 19h30"
+    ],
+    [
         "nome" => "Projeto Social ZN - Vila Sabrina",
         "endereco" => "Av prof Castro Júnior, 324",
         "bairro" => "Vila Sabrina, São Paulo - SP",

@@ -114,25 +114,25 @@ require_once 'data.php';
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div
                     class="bg-dojo-card p-10 border-t-4 border-dojo-red rounded-b-lg hover:scale-105 hover:border-dojo-gold transition-all duration-300">
-                    <h3 class="text-dojo-gold uppercase font-bold text-lg mb-5">Segunda, Quarta e Sexta</h3>
+                    <h3 class="text-dojo-gold uppercase font-bold text-lg mb-5">Segunda e Quarta </h3>
                     <div class="text-white text-xl font-bold">
-                        <p>17h00 às 18h15</p>
-                        <p>18h20 às 19h45</p>
+                        <p>17h00 às 18h10</p>
+                        <p>18h20 às 20h00</p>
                     </div>
                 </div>
                 <div
                     class="bg-dojo-card p-10 border-t-4 border-dojo-red rounded-b-lg hover:scale-105 hover:border-dojo-gold transition-all duration-300">
                     <h3 class="text-dojo-gold uppercase font-bold text-lg mb-5">Terça e Quinta</h3>
                     <div class="text-white text-xl font-bold">
-                        <p>08h00 às 09h00</p>
-                        <p>09h00 às 10h15</p>
+                        <p>08h30 às 09h45</p>
+                        <p>20h00 às 21h15</p>
                     </div>
                 </div>
                 <div
                     class="bg-dojo-card p-10 border-t-4 border-dojo-red rounded-b-lg hover:scale-105 hover:border-dojo-gold transition-all duration-300">
-                    <h3 class="text-dojo-gold uppercase font-bold text-lg mb-5">Sábado</h3>
+                    <h3 class="text-dojo-gold uppercase font-bold text-lg mb-5">Sexta</h3>
                     <div class="text-white text-xl font-bold">
-                        <p>09h00 às 11h00</p>
+                        <p>17h30 às 19h00</p>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@ require_once 'data.php';
             </div>
             <div class="lg:flex-1 flex flex-col justify-center text-center lg:text-left">
                 <p class="text-dojo-black mb-4">
-                    <strong class="text-lg">R. Borges Ladário, 68</strong><br>
+                    <strong class="text-lg">R. Borges Ladário, 60</strong><br>
                     Tucuruvi, São Paulo - SP<br>
                     <small class="text-gray-500">(Próximo à estação Metrô Parada Inglesa)</small>
                 </p>
@@ -319,7 +319,7 @@ require_once 'data.php';
         </div>
 
         <div class="text-gray-400 mb-8 space-y-2">
-            <p><strong>📍 Localização:</strong> Rua Borges Ladário, 68</p>
+            <p><strong>📍 Localização:</strong> Rua Borges Ladário, 60</p>
             <p>Parada Inglêsa - São Paulo/SP</p>
             <p><strong>📞 Contato:</strong> (11) 94062-0222</p>
         </div>
