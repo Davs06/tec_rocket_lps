@@ -101,7 +101,7 @@ require_once 'data.php';
         </div>
 
         <div class="flex flex-wrap justify-center items-center gap-12 bg-white p-10 rounded-lg shadow-sm">
-            <img src="/assets/img/material-m-braga/jks.webp" alt="JKS São Paulo" class="fed-img h-16 md:h-20">
+            <img src="/assets/img/material-m-braga/jks.webp" alt="JKS" class="fed-img h-16 md:h-20">
             <img src="/assets/img/material-m-braga/fpk.webp" alt="FPK" class="fed-img h-16 md:h-20">
             <img src="/assets/img/material-m-braga/cbk.webp" alt="CBK" class="fed-img h-16 md:h-20">
         </div>
