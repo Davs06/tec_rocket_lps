@@ -243,9 +243,13 @@ require_once 'data.php';
             </div>
             <div class="lg:flex-1 flex flex-col justify-center text-center lg:text-left">
                 <p class="text-dojo-black mb-4">
-                    <strong class="text-lg">R. Borges Ladário, 60</strong><br>
-                    Tucuruvi, São Paulo - SP<br>
-                    <small class="text-gray-500">(Próximo à estação Metrô Parada Inglesa)</small>
+                    <strong class="text-lg">
+                        <? $un['endereco'] ?>
+                    </strong><br>
+                    <? $un['endereco'] ?><br>
+                    <small class="text-gray-500">
+                        <? $un['referencia'] ?>
+                    </small>
                 </p>
                 <a href="https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi" target="_blank"
                     class="inline-block border-b-2 border-dojo-red text-dojo-red font-black uppercase text-sm hover:text-dojo-black hover:border-dojo-black transition-all w-fit mx-auto lg:mx-0">
@@ -319,8 +323,12 @@ require_once 'data.php';
         </div>
 
         <div class="text-gray-400 mb-8 space-y-2">
-            <p><strong>📍 Localização:</strong> Rua Borges Ladário, 60</p>
-            <p>Parada Inglêsa - São Paulo/SP</p>
+            <p><strong>📍 Localização:</strong>
+                <? $un['endereco'] ?>
+            </p>
+            <p>
+                <? $un['bairro'] ?>
+            </p>
             <p><strong>📞 Contato:</strong> (11) 94062-0222</p>
         </div>
 

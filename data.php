@@ -62,7 +62,7 @@ $professores = [
 $unidades = [
     [
         "nome" => "Unidade Sede",
-        "endereco" => "Rua Borges Ladário, 68",
+        "endereco" => "Rua Borges Ladário, 60",
         "bairro" => "Tucuruvi, São Paulo - SP",
         "referencia" => "(Próximo à Estação Parada Inglesa)",
         "link_maps" => "https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi",
