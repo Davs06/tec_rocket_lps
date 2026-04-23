@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maternidade & Lucro | Guia Prático para Mães</title>
 
+    <link rel="canonical" href="https://maternidade.techrocket.site/" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maternidade.techrocket.site/">
+    <meta property="og:title" content="Maternidade & Lucro | Guia Prático para Mães">
+    <meta property="og:description"
+        content="Descubra como ganhar dinheiro online enquanto cuida do seu bebê com nosso guia prático para mães empreendedoras.">
+    <meta property="og:image" content="https://maternidade.techrocket.site/assets/img/Maternidade-e-Lucro.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maternidade & Lucro">
+    <meta name="twitter:description" content="Descubra como ganhar dinheiro online enquanto cuida do seu bebê.">
+    <meta name="twitter:image" content="https://maternidade.techrocket.site/assets/img/Maternidade-e-Lucro.png">
+
     <meta name="description"
         content="Descubra como ganhar dinheiro online enquanto cuida do seu bebê com nosso guia prático para mães empreendedoras.">
     <link rel="icon" type="image/png" href="/assets/img/favicon-ebook/favicon-96x96.png" sizes="96x96" />

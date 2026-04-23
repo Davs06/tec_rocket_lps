@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Rocket - Soluções em Tecnologia e Automação</title>
+
+    <link rel="canonical" href="https://techrocket.site/" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techrocket.site/">
+    <meta property="og:title" content="Tech Rocket - Soluções em Tecnologia e Automação">
+    <meta property="og:description"
+        content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA e integrações personalizadas.">
+    <meta property="og:image" content="https://techrocket.site/assets/img/tech_rocket/section1_tech_rocket.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tech Rocket">
+    <meta name="twitter:description" content="Impulsionando negócios com tecnologia e automação.">
+    <meta name="twitter:image" content="https://techrocket.site/assets/img/tech_rocket/section1_tech_rocket.png">
+
     <meta name="description"
         content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA e integrações personalizadas.">
 
@@ -22,10 +39,10 @@
     <link rel="stylesheet" href="/assets/css/mouse_follower.css">
 
     <style>
-    :root {
-        --follower-color: <?php echo $cor_rastro;
-        ?>;
-    }
+        :root {
+            --follower-color: <?php echo $cor_rastro;
+                                ?>;
+        }
     </style>
 </head>
 
@@ -212,30 +229,30 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    const follower = document.getElementById('mouse-follower');
+        const follower = document.getElementById('mouse-follower');
 
-    window.addEventListener('mousemove', (e) => {
-        follower.style.left = e.clientX + 'px';
-        follower.style.top = e.clientY + 'px';
-    });
+        window.addEventListener('mousemove', (e) => {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        });
 
-    const interactables = document.querySelectorAll('a, button, input, .rocket-card');
-    interactables.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            follower.style.transform = 'translate(-50%, -50%) scale(3)';
-            follower.style.opacity = '0.3';
+        const interactables = document.querySelectorAll('a, button, input, .rocket-card');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                follower.style.transform = 'translate(-50%, -50%) scale(3)';
+                follower.style.opacity = '0.3';
+            });
+            el.addEventListener('mouseleave', () => {
+                follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                follower.style.opacity = '0.6';
+            });
         });
-        el.addEventListener('mouseleave', () => {
-            follower.style.transform = 'translate(-50%, -50%) scale(1)';
-            follower.style.opacity = '0.6';
-        });
-    });
     </script>
     <script>
-    AOS.init({
-        duration: 1000,
-        once: false
-    });
+        AOS.init({
+            duration: 1000,
+            once: false
+        });
     </script>
 </body>
 

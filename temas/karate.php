@@ -10,28 +10,46 @@ require_once 'data.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto M. Braga - Karate Shotokan</title>
 
+    <link rel="canonical" href="https://karate.techrocket.site/" />
+    <meta name="description"
+        content="Instituto M. Braga Karate Shotokan no Tucuruvi. Treine com o Sensei Marcelo Braga. Disciplina e tradição JKS.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://karate.techrocket.site/">
+    <meta property="og:title" content="Instituto M. Braga - Karate Shotokan">
+    <meta property="og:description"
+        content="Karate Shotokan no Tucuruvi. Formação de caráter, disciplina e excelência física. Agende sua aula experimental.">
+    <meta property="og:image" content="https://karate.techrocket.site/assets/img/material-m-braga/senei-marcelo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instituto M. Braga - Karate Shotokan">
+    <meta name="twitter:description" content="Treine Karate Shotokan com o Sensei Marcelo Braga.">
+    <meta name="twitter:image" content="https://karate.techrocket.site/assets/img/material-m-braga/senei-marcelo.webp">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    'dojo-red': '#cc0000',
-                    'dojo-gold': '#d4af37',
-                    'dojo-black': '#0b0b0b',
-                    'dojo-card': '#141414',
-                    'off-white': '#f9f9f9',
-                    'preto-puro': '#000000',
-                },
-                fontFamily: {
-                    montserrat: ['Montserrat', 'sans-serif'],
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dojo-red': '#cc0000',
+                        'dojo-gold': '#d4af37',
+                        'dojo-black': '#0b0b0b',
+                        'dojo-card': '#141414',
+                        'off-white': '#f9f9f9',
+                        'preto-puro': '#000000',
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
                 }
             }
         }
-    }
     </script>
 
     <link rel="stylesheet" href="/assets/css/karate.css">
@@ -83,8 +101,8 @@ require_once 'data.php';
         </div>
 
         <div class="flex flex-wrap justify-center items-center gap-12 bg-white p-10 rounded-lg shadow-sm">
-            <img src="/assets/img/material-m-braga/jks.jpeg" alt="JKS São Paulo" class="fed-img h-16 md:h-20">
-            <img src="/assets/img/material-m-braga/fpk.jpeg" alt="FPK" class="fed-img h-16 md:h-20">
+            <img src="/assets/img/material-m-braga/jks.webp" alt="JKS São Paulo" class="fed-img h-16 md:h-20">
+            <img src="/assets/img/material-m-braga/fpk.webp" alt="FPK" class="fed-img h-16 md:h-20">
             <img src="/assets/img/material-m-braga/cbk.png" alt="CBK" class="fed-img h-16 md:h-20">
         </div>
     </section>
@@ -129,7 +147,7 @@ require_once 'data.php';
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                 <div class="instructor-card group relative overflow-hidden rounded-lg shadow-xl">
-                    <img src="assets/img/material-m-braga/senei-marcelo.jpeg" alt="Sensei Marcelo Braga"
+                    <img src="assets/img/material-m-braga/senei-marcelo.webp" alt="Sensei Marcelo Braga"
                         class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-110">
                     <div class="instructor-overlay absolute inset-0 flex flex-col justify-end p-8 text-white">
                         <h3 class="text-3xl font-black uppercase tracking-tighter">Marcelo Braga</h3>
@@ -182,34 +200,34 @@ require_once 'data.php';
                 // Se o índice for maior que 2 (0, 1, 2 são os 3 primeiros), adicionamos classes para esconder
                 $hiddenClass = ($index > 2) ? 'hidden-instructor hidden' : '';
             ?>
-            <div class="instructor-card group bg-white rounded-lg overflow-hidden shadow-md <?= $hiddenClass ?>">
-                <div class="relative h-72 overflow-hidden">
-                    <img src="<?= $profe['foto'] ?>" alt="<?= $profe['nome'] ?>"
-                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute top-4 left-4 z-10">
-                        <span
-                            class="tag-label bg-dojo-red text-white px-3 py-1 text-xs font-black uppercase tracking-widest rounded"><?= $profe['cargo'] ?></span>
+                <div class="instructor-card group bg-white rounded-lg overflow-hidden shadow-md <?= $hiddenClass ?>">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="<?= $profe['foto'] ?>" alt="<?= $profe['nome'] ?>"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 z-10">
+                            <span
+                                class="tag-label bg-dojo-red text-white px-3 py-1 text-xs font-black uppercase tracking-widest rounded"><?= $profe['cargo'] ?></span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 border-b-4 border-transparent group-hover:border-dojo-red transition-all">
+                        <h4 class="text-xl font-black uppercase text-dojo-black"><?= $profe['nome'] ?></h4>
+                        <p class="text-xs text-dojo-gold font-bold mb-3 tracking-widest"><?= $profe['graduacao'] ?></p>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4"><?= $profe['bio'] ?></p>
+                        <a href="https://instagram.com/<?= $profe['insta'] ?>" target="_blank"
+                            class="text-gray-400 hover:text-dojo-red transition-colors text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
-
-                <div class="p-6 border-b-4 border-transparent group-hover:border-dojo-red transition-all">
-                    <h4 class="text-xl font-black uppercase text-dojo-black"><?= $profe['nome'] ?></h4>
-                    <p class="text-xs text-dojo-gold font-bold mb-3 tracking-widest"><?= $profe['graduacao'] ?></p>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4"><?= $profe['bio'] ?></p>
-                    <a href="https://instagram.com/<?= $profe['insta'] ?>" target="_blank"
-                        class="text-gray-400 hover:text-dojo-red transition-colors text-xl">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
             <?php endforeach; ?>
         </div>
 
         <?php if (count($professores) > 3): ?>
-        <button id="btn-ver-mais"
-            class="mt-12 inline-block border-2 border-dojo-black text-dojo-black px-8 py-3 font-black uppercase tracking-widest hover:bg-dojo-black hover:text-white transition-all">
-            Ver Mais Professores
-        </button>
+            <button id="btn-ver-mais"
+                class="mt-12 inline-block border-2 border-dojo-black text-dojo-black px-8 py-3 font-black uppercase tracking-widest hover:bg-dojo-black hover:text-white transition-all">
+                Ver Mais Professores
+            </button>
         <?php endif; ?>
     </section>
 
@@ -248,55 +266,55 @@ require_once 'data.php';
                 // Lógica de exibição: esconde após o 3º item
                 $hiddenClass = ($idx > 2) ? 'hidden-unidade hidden' : '';
             ?>
-            <div
-                class="unidade-card flex flex-col bg-white rounded-lg shadow-md border-2 <?= $borderColor ?> overflow-hidden transition-all duration-300 hover:-translate-y-2 <?= $hiddenClass ?>">
+                <div
+                    class="unidade-card flex flex-col bg-white rounded-lg shadow-md border-2 <?= $borderColor ?> overflow-hidden transition-all duration-300 hover:-translate-y-2 <?= $hiddenClass ?>">
 
-                <div class="<?= $headerColor ?> p-4 text-center">
-                    <h3 class="text-white font-black uppercase text-xl tracking-tight"><?= $un['nome'] ?></h3>
-                </div>
-
-                <div class="p-8 flex-grow flex flex-col justify-between">
-                    <div>
-                        <p class="text-gray-800 mb-6 leading-snug">
-                            <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
-                            <strong class="text-lg"><?= $un['endereco'] ?></strong><br>
-                            <span class="text-gray-600"><?= $un['bairro'] ?></span><br>
-                            <small class="text-gray-400 italic"><?= $un['referencia'] ?></small>
-                        </p>
-
-                        <div class="mb-8">
-                            <h5 class="text-xs font-black uppercase tracking-widest text-black mb-3">Horários:</h5>
-                            <?php if ($isSede): ?>
-                            <a href="#horarios"
-                                class="inline-flex items-center gap-2 bg-red-50 text-dojo-red px-4 py-2 rounded-md font-bold text-sm border border-red-100 hover:bg-dojo-red hover:text-white transition-all">
-                                Nossos horários acima ⤴️
-                            </a>
-                            <?php else: ?>
-                            <p class="text-sm font-bold text-gray-700 leading-relaxed"><?= $un['horarios'] ?></p>
-                            <?php endif; ?>
-                        </div>
+                    <div class="<?= $headerColor ?> p-4 text-center">
+                        <h3 class="text-white font-black uppercase text-xl tracking-tight"><?= $un['nome'] ?></h3>
                     </div>
 
-                    <a href="<?= $un['link_maps'] ?>" target="_blank"
-                        class="block text-center border-2 border-black py-2 rounded-md font-black text-sm uppercase hover:bg-black hover:text-white transition-all">
-                        Ver no Mapa
-                    </a>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <p class="text-gray-800 mb-6 leading-snug">
+                                <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
+                                <strong class="text-lg"><?= $un['endereco'] ?></strong><br>
+                                <span class="text-gray-600"><?= $un['bairro'] ?></span><br>
+                                <small class="text-gray-400 italic"><?= $un['referencia'] ?></small>
+                            </p>
+
+                            <div class="mb-8">
+                                <h5 class="text-xs font-black uppercase tracking-widest text-black mb-3">Horários:</h5>
+                                <?php if ($isSede): ?>
+                                    <a href="#horarios"
+                                        class="inline-flex items-center gap-2 bg-red-50 text-dojo-red px-4 py-2 rounded-md font-bold text-sm border border-red-100 hover:bg-dojo-red hover:text-white transition-all">
+                                        Nossos horários acima ⤴️
+                                    </a>
+                                <?php else: ?>
+                                    <p class="text-sm font-bold text-gray-700 leading-relaxed"><?= $un['horarios'] ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+                        <a href="<?= $un['link_maps'] ?>" target="_blank"
+                            class="block text-center border-2 border-black py-2 rounded-md font-black text-sm uppercase hover:bg-black hover:text-white transition-all">
+                            Ver no Mapa
+                        </a>
+                    </div>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
 
         <?php if (count($unidades) > 3): ?>
-        <button id="btn-ver-mais-unidades"
-            class="mt-12 inline-block bg-dojo-black text-white px-10 py-4 font-black uppercase tracking-widest hover:bg-dojo-red transition-all shadow-lg cursor-pointer">
-            Ver Todas as Unidades
-        </button>
+            <button id="btn-ver-mais-unidades"
+                class="mt-12 inline-block bg-dojo-black text-white px-10 py-4 font-black uppercase tracking-widest hover:bg-dojo-red transition-all shadow-lg cursor-pointer">
+                Ver Todas as Unidades
+            </button>
         <?php endif; ?>
     </section>
 
     <footer class="bg-preto-puro py-16 px-4 text-center border-t border-gray-800">
         <div class="mb-8">
-            <img src="/assets/img/material-m-braga/logo-footer.jpeg" alt="Instituto M. Braga"
+            <img src="/assets/img/material-m-braga/logo-footer.webp" alt="Instituto M. Braga"
                 class="max-w-[180px] mx-auto rounded opacity-90 hover:opacity-100 hover:scale-105 transition-all">
         </div>
 
@@ -319,29 +337,29 @@ require_once 'data.php';
     </footer>
 
     <script>
-    // Lógica para Professores
-    document.getElementById('btn-ver-mais')?.addEventListener('click', function() {
-        const hiddenCards = document.querySelectorAll('.hidden-instructor');
-        hiddenCards.forEach(card => {
-            card.classList.remove('hidden');
-            setTimeout(() => {
-                card.style.opacity = '1';
-            }, 10);
+        // Lógica para Professores
+        document.getElementById('btn-ver-mais')?.addEventListener('click', function() {
+            const hiddenCards = document.querySelectorAll('.hidden-instructor');
+            hiddenCards.forEach(card => {
+                card.classList.remove('hidden');
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                }, 10);
+            });
+            this.classList.add('hidden');
         });
-        this.classList.add('hidden');
-    });
 
-    // Lógica para Unidades (Independente)
-    document.getElementById('btn-ver-mais-unidades')?.addEventListener('click', function() {
-        const cards = document.querySelectorAll('.hidden-unidade');
-        cards.forEach(card => {
-            card.classList.remove('hidden');
-            setTimeout(() => {
-                card.style.opacity = '1';
-            }, 10);
+        // Lógica para Unidades (Independente)
+        document.getElementById('btn-ver-mais-unidades')?.addEventListener('click', function() {
+            const cards = document.querySelectorAll('.hidden-unidade');
+            cards.forEach(card => {
+                card.classList.remove('hidden');
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                }, 10);
+            });
+            this.classList.add('hidden');
         });
-        this.classList.add('hidden');
-    });
     </script>
 
 </body>

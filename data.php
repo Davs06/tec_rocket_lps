@@ -6,7 +6,7 @@ $professores = [
         "cargo" => "Professor",
         "graduacao" => "1º Dan",
         "bio" => "Professor em fundamentos e treinamento de karate - Atleta de alto rendimento.",
-        "foto" => "assets/img/material-m-braga/ph.jpeg",
+        "foto" => "assets/img/material-m-braga/ph.webp",
         "insta" => "pedronz_090",
         "classe_tag" => "tag-red"
     ],
@@ -15,7 +15,7 @@ $professores = [
         "cargo" => "Professor",
         "graduacao" => "1º Dan",
         "bio" => "Professora em fundamentos e treinamento de karate e treinos funcionais - Atleta de alto rendimento.",
-        "foto" => "assets/img/material-m-braga/giovanna.jpeg",
+        "foto" => "assets/img/material-m-braga/giovanna.webp",
         "insta" => "giovannamvalente",
         "classe_tag" => "tag-red"
     ],
@@ -24,7 +24,7 @@ $professores = [
         "cargo" => "Professor",
         "graduacao" => "1º Dan",
         "bio" => "Professora em fundamentos e treinamento de karate - Arbitra (JKS) - Atleta de alto rendimento.",
-        "foto" => "assets/img/material-m-braga/budai-1.jpeg",
+        "foto" => "assets/img/material-m-braga/budai-1.webp",
         "insta" => "jessica_s_budai",
         "classe_tag" => "tag-red"
     ],
@@ -33,7 +33,7 @@ $professores = [
         "cargo" => "Professor",
         "graduacao" => "3º Dan",
         "bio" => "Professor em fundamentos e treinamento de karate.",
-        "foto" => "assets/img/material-m-braga/josias.jpeg",
+        "foto" => "assets/img/material-m-braga/josias.webp",
         "insta" => "",
         "classe_tag" => "tag-red"
     ],
@@ -42,7 +42,7 @@ $professores = [
         "cargo" => "Professor",
         "graduacao" => "1º Dan",
         "bio" => "Professor em fundamentos e treinamento de karate.",
-        "foto" => "assets/img/material-m-braga/murilo.jpeg",
+        "foto" => "assets/img/material-m-braga/murilo.webp",
         "insta" => "",
         "classe_tag" => "tag-red"
     ],
@@ -51,7 +51,7 @@ $professores = [
         "cargo" => "Instrutor",
         "graduacao" => "Faixa Marrom (1º Kyu)",
         "bio" => "Instrutor em fundamentos e treinamento para iniciantes (karate).",
-        "foto" => "assets/img/material-m-braga/djalma.jpeg",
+        "foto" => "assets/img/material-m-braga/djalma.webp",
         "insta" => "djalma_karateca",
         "classe_tag" => "tag-red"
     ],
