@@ -74,7 +74,7 @@ require_once 'data.php';
     <header
         class="hero-bg h-screen flex items-center justify-center text-center border-b-4 border-dojo-red px-4 relative">
         <div class="relative z-10">
-            <img src="/assets/img/material-m-braga/logo-rmbg.png" alt="Instituto M. Braga"
+            <img src="/assets/img/material-m-braga/logo-rmbg.webp" alt="Instituto M. Braga"
                 class="max-w-[280px] mx-auto mb-8">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-white">
                 INSTITUTO <span class="text-dojo-red">M. BRAGA</span>
@@ -103,7 +103,7 @@ require_once 'data.php';
         <div class="flex flex-wrap justify-center items-center gap-12 bg-white p-10 rounded-lg shadow-sm">
             <img src="/assets/img/material-m-braga/jks.webp" alt="JKS São Paulo" class="fed-img h-16 md:h-20">
             <img src="/assets/img/material-m-braga/fpk.webp" alt="FPK" class="fed-img h-16 md:h-20">
-            <img src="/assets/img/material-m-braga/cbk.png" alt="CBK" class="fed-img h-16 md:h-20">
+            <img src="/assets/img/material-m-braga/cbk.webp" alt="CBK" class="fed-img h-16 md:h-20">
         </div>
     </section>
 
