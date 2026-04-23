@@ -234,78 +234,78 @@ require_once 'data.php';
     <section id="localizacao" class="bg-white py-20 px-4">
         <h2 class="text-4xl font-black text-center uppercase mb-10 text-dojo-black">NOSSA <span
                 class="text-dojo-red">LOCALIZAÇÃO</span></h2>
-        <div
-            class="flex flex-col lg:flex-row gap-8 p-5 rounded-lg shadow-md border border-gray-200 max-w-[1100px] mx-auto py-20 px-4">
-            <div class="lg:flex-[2] rounded overflow-hidden border-2 border-dojo-red">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.814324151213!2d-46.605944523773194!3d-23.48536525791784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7c085186943%3A0xb592aa3008c9f115!2sInstituto%20M.%20Braga%20Karate!5e0!3m2!1spt-BR!2sbr!4v1706220000000!5m2!1spt-BR!2sbr"
-                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <?php foreach ($unidades as $idx => $un):
+            $isSede = $un['is_sede'];
+            $borderColor = $isSede ? 'border-dojo-gold' : 'border-dojo-red';
+            $headerColor = $isSede ? 'bg-dojo-gold' : 'bg-dojo-red';
+            // Lógica de exibição: esconde após o 3º item
+            $hiddenClass = ($idx > 2) ? 'hidden-unidade hidden' : '';
+        ?>
+            <div
+                class="flex flex-col lg:flex-row gap-8 p-5 rounded-lg shadow-md border border-gray-200 max-w-[1100px] mx-auto py-20 px-4">
+                <div class="lg:flex-[2] rounded overflow-hidden border-2 border-dojo-red">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.814324151213!2d-46.605944523773194!3d-23.48536525791784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7c085186943%3A0xb592aa3008c9f115!2sInstituto%20M.%20Braga%20Karate!5e0!3m2!1spt-BR!2sbr!4v1706220000000!5m2!1spt-BR!2sbr"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="lg:flex-1 flex flex-col justify-center text-center lg:text-left">
+                    <p class="text-dojo-black mb-4">
+                        <strong class="text-lg">
+                            <? $un['endereco'] ?>
+                        </strong><br>
+                        <? $un['endereco'] ?><br>
+                        <small class="text-gray-500">
+                            <? $un['referencia'] ?>
+                        </small>
+                    </p>
+                    <a href="https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi" target="_blank"
+                        class="inline-block border-b-2 border-dojo-red text-dojo-red font-black uppercase text-sm hover:text-dojo-black hover:border-dojo-black transition-all w-fit mx-auto lg:mx-0">
+                        Ver no Google Maps
+                    </a>
+                </div>
             </div>
-            <div class="lg:flex-1 flex flex-col justify-center text-center lg:text-left">
-                <p class="text-dojo-black mb-4">
-                    <strong class="text-lg">
-                        <? $un['endereco'] ?>
-                    </strong><br>
-                    <? $un['endereco'] ?><br>
-                    <small class="text-gray-500">
-                        <? $un['referencia'] ?>
-                    </small>
-                </p>
-                <a href="https://maps.google.com/?q=Rua+Borges+Ladário+68+Tucuruvi" target="_blank"
-                    class="inline-block border-b-2 border-dojo-red text-dojo-red font-black uppercase text-sm hover:text-dojo-black hover:border-dojo-black transition-all w-fit mx-auto lg:mx-0">
-                    Ver no Google Maps
-                </a>
-            </div>
-        </div>
     </section>
 
     <section id="unidades" class="max-w-[1100px] mx-auto py-20 px-4 text-center">
         <h2 class="text-4xl font-black text-center uppercase mb-12">Onde <span class="text-dojo-red">Treinar</span></h2>
 
         <div id="unidades-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-            <?php foreach ($unidades as $idx => $un):
-                $isSede = $un['is_sede'];
-                $borderColor = $isSede ? 'border-dojo-gold' : 'border-dojo-red';
-                $headerColor = $isSede ? 'bg-dojo-gold' : 'bg-dojo-red';
-                // Lógica de exibição: esconde após o 3º item
-                $hiddenClass = ($idx > 2) ? 'hidden-unidade hidden' : '';
-            ?>
-                <div
-                    class="unidade-card flex flex-col bg-white rounded-lg shadow-md border-2 <?= $borderColor ?> overflow-hidden transition-all duration-300 hover:-translate-y-2 <?= $hiddenClass ?>">
 
-                    <div class="<?= $headerColor ?> p-4 text-center">
-                        <h3 class="text-white font-black uppercase text-xl tracking-tight"><?= $un['nome'] ?></h3>
-                    </div>
+            <div
+                class="unidade-card flex flex-col bg-white rounded-lg shadow-md border-2 <?= $borderColor ?> overflow-hidden transition-all duration-300 hover:-translate-y-2 <?= $hiddenClass ?>">
 
-                    <div class="p-8 flex-grow flex flex-col justify-between">
-                        <div>
-                            <p class="text-gray-800 mb-6 leading-snug">
-                                <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
-                                <strong class="text-lg"><?= $un['endereco'] ?></strong><br>
-                                <span class="text-gray-600"><?= $un['bairro'] ?></span><br>
-                                <small class="text-gray-400 italic"><?= $un['referencia'] ?></small>
-                            </p>
-
-                            <div class="mb-8">
-                                <h5 class="text-xs font-black uppercase tracking-widest text-black mb-3">Horários:</h5>
-                                <?php if ($isSede): ?>
-                                    <a href="#horarios"
-                                        class="inline-flex items-center gap-2 bg-red-50 text-dojo-red px-4 py-2 rounded-md font-bold text-sm border border-red-100 hover:bg-dojo-red hover:text-white transition-all">
-                                        Nossos horários acima ⤴️
-                                    </a>
-                                <?php else: ?>
-                                    <p class="text-sm font-bold text-gray-700 leading-relaxed"><?= $un['horarios'] ?></p>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-
-                        <a href="<?= $un['link_maps'] ?>" target="_blank"
-                            class="block text-center border-2 border-black py-2 rounded-md font-black text-sm uppercase hover:bg-black hover:text-white transition-all">
-                            Ver no Mapa
-                        </a>
-                    </div>
+                <div class="<?= $headerColor ?> p-4 text-center">
+                    <h3 class="text-white font-black uppercase text-xl tracking-tight"><?= $un['nome'] ?></h3>
                 </div>
-            <?php endforeach; ?>
+
+                <div class="p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-gray-800 mb-6 leading-snug">
+                            <i class="fas fa-map-marker-alt text-dojo-red mr-2"></i>
+                            <strong class="text-lg"><?= $un['endereco'] ?></strong><br>
+                            <span class="text-gray-600"><?= $un['bairro'] ?></span><br>
+                            <small class="text-gray-400 italic"><?= $un['referencia'] ?></small>
+                        </p>
+
+                        <div class="mb-8">
+                            <h5 class="text-xs font-black uppercase tracking-widest text-black mb-3">Horários:</h5>
+                            <?php if ($isSede): ?>
+                                <a href="#horarios"
+                                    class="inline-flex items-center gap-2 bg-red-50 text-dojo-red px-4 py-2 rounded-md font-bold text-sm border border-red-100 hover:bg-dojo-red hover:text-white transition-all">
+                                    Nossos horários acima ⤴️
+                                </a>
+                            <?php else: ?>
+                                <p class="text-sm font-bold text-gray-700 leading-relaxed"><?= $un['horarios'] ?></p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <a href="<?= $un['link_maps'] ?>" target="_blank"
+                        class="block text-center border-2 border-black py-2 rounded-md font-black text-sm uppercase hover:bg-black hover:text-white transition-all">
+                        Ver no Mapa
+                    </a>
+                </div>
+            </div>
         </div>
 
         <?php if (count($unidades) > 3): ?>
@@ -331,17 +331,19 @@ require_once 'data.php';
             </p>
             <p><strong>📞 Contato:</strong> (11) 94062-0222</p>
         </div>
+    <?php endforeach; ?>
 
-        <div class="mb-8">
-            <a href="https://www.instagram.com/institutombraga" target="_blank"
-                class="inline-flex items-center gap-3 text-white font-bold border border-gray-700 px-6 py-3 rounded-full hover:bg-dojo-red hover:border-dojo-red transition-all">
-                <i class="fab fa-instagram text-dojo-red text-xl"></i> @institutombraga
-            </a>
-        </div>
 
-        <p class="text-xs text-gray-600 tracking-widest uppercase">
-            © 2026 Instituto M. Braga Karate. Todos os direitos reservados. | Por Tech Rocket.
-        </p>
+    <div class="mb-8">
+        <a href="https://www.instagram.com/institutombraga" target="_blank"
+            class="inline-flex items-center gap-3 text-white font-bold border border-gray-700 px-6 py-3 rounded-full hover:bg-dojo-red hover:border-dojo-red transition-all">
+            <i class="fab fa-instagram text-dojo-red text-xl"></i> @institutombraga
+        </a>
+    </div>
+
+    <p class="text-xs text-gray-600 tracking-widest uppercase">
+        © 2026 Instituto M. Braga Karate. Todos os direitos reservados. | Por Tech Rocket.
+    </p>
     </footer>
 
     <script>
