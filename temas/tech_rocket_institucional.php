@@ -40,7 +40,7 @@
     <header class="navbar-header" id="header">
         <div class="container navbar-container">
             <a href="#" class="logo">
-                <img src="/assets/img/logotec_rocket.png" alt="TechRocket Logo" class="logo-img">
+                <img src="/assets/img/tech_rocket/logotec_rocket.png" alt="TechRocket Logo" class="logo-img">
                 <span class="logo-text">TECH <span class="gradient-text">ROCKET</span></span>
             </a>
 
@@ -133,7 +133,7 @@
                         
                         <div class="interactive-image-viewport">
                             <!-- Original Section 1 Image -->
-                            <img src="/assets/img/section1_tech_rocket.png" alt="TechRocket Plataforma Interativa" class="hero-interactive-img" id="hero-interactive-img">
+                            <img src="/assets/img/tech_rocket/section1_tech_rocket.png" alt="TechRocket Plataforma Interativa" class="hero-interactive-img" id="hero-interactive-img">
 
                             <!-- Interactive Mouse Spotlight Glow -->
                             <div class="mouse-spotlight" id="mouse-spotlight"></div>
@@ -236,7 +236,7 @@
                     <!-- Produto 2: Daven & Iori -->
                     <div class="glass-card produto-card">
                         <div class="produto-img-box">
-                            <img src="/assets/img/DeI_mock.png" alt="Daven & Iori E-commerce" class="produto-img">
+                            <img src="/assets/img/tech_rocket/DeI_mock.png" alt="Daven & Iori E-commerce" class="produto-img">
                         </div>
                         <div class="produto-content">
                             <div class="produto-tag cyan">E-commerce & Moda</div>
@@ -469,7 +469,7 @@
                 <div class="parceiro-single-box">
                     <div class="glass-card parceiro-card single-partner">
                         <div class="parceiro-logo-box">
-                            <img src="/assets/img/somos_tec.png" alt="SomosTec BR Logo" class="parceiro-logo-img">
+                            <img src="/assets/img/tech_rocket/somos_tec.png" alt="SomosTec BR Logo" class="parceiro-logo-img">
                         </div>
                         <div class="parceiro-info-box">
                             <h3 class="parceiro-title">SomosTec BR</h3>
@@ -606,7 +606,7 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <a href="#" class="logo">
-                    <img src="/assets/img/logotec_rocket.png" alt="TechRocket Logo" class="logo-img">
+                    <img src="/assets/img/tech_rocket/logotec_rocket.png" alt="TechRocket Logo" class="logo-img">
                     <span class="logo-text">Tech<span class="gradient-text">Rocket</span></span>
                 </a>
                 <p class="footer-tagline">
