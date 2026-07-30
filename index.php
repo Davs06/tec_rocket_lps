@@ -8,18 +8,15 @@ if ($dominio == 'bratzstyle.com.br') {
 } elseif ($dominio == 'daveniori.com.br') {
     $projeto = 'daven_iori';
     $cor_rastro = '#C5A059'; // Ouro/Dourado Elegante
-} elseif ($dominio == 'maternidade.techrocket.site') {
+} elseif ($dominio == 'maternidade.techrocket.com.br') {
     $projeto = 'maternidade_lucro';
     $cor_rastro = '#f43f5e'; // Rose/Rosa Suave
-} elseif ($dominio == 'techrocket.site') {
+} elseif ($dominio == 'techrocket.com.br') {
     $projeto = 'tech_rocket_institucional';
     $cor_rastro = '#818cf8'; // Indigo (Tecnologia)
-} elseif ($dominio == 'daveniori.com.br') {
-    $projeto = 'daven_iori';
-    $cor_rastro = '#C5A059'; // O dourado que definimos
 } elseif ($dominio == 'institutombraga.com.br') {
     $projeto = 'karate';
-} elseif ($dominio == 'fitness.techrocket.site') {
+} elseif ($dominio == 'fitness.techrocket.com.br') {
     $projeto = 'fitness_project';
 } else {
     include('404.php');
