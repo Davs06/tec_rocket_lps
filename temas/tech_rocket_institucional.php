@@ -1,23 +1,28 @@
 <?php header('Content-Type: text/html; charset=utf-8'); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechRocket | Automações, Agentes de IA, Apps e Sites de Alta Performance</title>
-    <meta name="description" content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA, Automações n8n, E-commerce e Apps sob medida.">
-    <link rel="canonical" href="https://techrocket.site/">
+    <meta name="description"
+        content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA, Automações n8n, E-commerce e Apps sob medida.">
+    <link rel="canonical" href="https://techrocket.com.br/">
 
     <!-- Open Graph / Meta -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://techrocket.site/">
+    <meta property="og:url" content="https://techrocket.com.br/">
     <meta property="og:title" content="TechRocket - Soluções em Tecnologia e Automação">
-    <meta property="og:description" content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA e integrações personalizadas.">
+    <meta property="og:description"
+        content="Impulsionando negócios com tecnologia e automação. Desenvolvemos Landing Pages, Chatbots com IA e integrações personalizadas.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -25,6 +30,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/assets/css/tech_rocket.css">
 </head>
+
 <body>
 
     <!-- Ambient Background Glows, Starry Space Canvas & Grid -->
@@ -84,11 +90,14 @@
                     </div>
 
                     <h1 class="hero-title">
-                        Decole seu Negócio com <span class="gradient-text">Automação</span>, <span class="gradient-text-alt">Agentes de IA</span> e Softwares Modernos
+                        Decole seu Negócio com <span class="gradient-text">Automação</span>, <span
+                            class="gradient-text-alt">Agentes de IA</span> e Softwares Modernos
                     </h1>
 
                     <p class="hero-subtitle">
-                        Transformamos rotinas manuais em máquinas autônomas de alta performance. Desenvolvemos agentes inteligentes, fluxos automatizados em n8n, aplicativos e sites acelerados para multiplicar seu faturamento.
+                        Transformamos rotinas manuais em máquinas autônomas de alta performance. Desenvolvemos agentes
+                        inteligentes, fluxos automatizados em n8n, aplicativos e sites acelerados para multiplicar seu
+                        faturamento.
                     </p>
 
                     <div class="hero-cta-group">
@@ -130,10 +139,12 @@
                             <span class="dot dot-green"></span>
                             <span class="card-title-text">TechRocket Interactive Platform Showcase</span>
                         </div>
-                        
+
                         <div class="interactive-image-viewport">
                             <!-- Original Section 1 Image -->
-                            <img src="/assets/img/tech_rocket/section1_tech_rocket.png" alt="TechRocket Plataforma Interativa" class="hero-interactive-img" id="hero-interactive-img">
+                            <img src="/assets/img/tech_rocket/section1_tech_rocket.png"
+                                alt="TechRocket Plataforma Interativa" class="hero-interactive-img"
+                                id="hero-interactive-img">
 
                             <!-- Interactive Mouse Spotlight Glow -->
                             <div class="mouse-spotlight" id="mouse-spotlight"></div>
@@ -207,26 +218,32 @@
                 <div class="section-header text-center">
                     <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Nossos Produtos & Marcas</span>
                     <h2 class="section-title">Ecossistema <span class="gradient-text">TechRocket</span></h2>
-                    <p class="section-subtitle">Conheça os projetos e marcas desenvolvidas com o ecossistema de tecnologia da TechRocket.</p>
+                    <p class="section-subtitle">Conheça os projetos e marcas desenvolvidas com o ecossistema de
+                        tecnologia da TechRocket.</p>
                 </div>
 
                 <div class="produtos-grid">
                     <!-- Produto 1: Maternidade de Lucro -->
                     <div class="glass-card produto-card">
                         <div class="produto-img-box">
-                            <img src="/assets/img/Maternidade-e-Lucro.png" alt="Maternidade de Lucro" class="produto-img">
+                            <img src="/assets/img/Maternidade-e-Lucro.png" alt="Maternidade de Lucro"
+                                class="produto-img">
                         </div>
                         <div class="produto-content">
                             <div class="produto-tag purple">Plataforma Educacional</div>
                             <h3 class="produto-title">Maternidade de Lucro</h3>
                             <p class="produto-desc">
-                                Projeto dedicado a empoderar mulheres e mães a conquistarem sua independência financeira através do mercado digital e negócios escaláveis.
+                                Projeto dedicado a empoderar mulheres e mães a conquistarem sua independência financeira
+                                através do mercado digital e negócios escaláveis.
                             </p>
                             <div class="produto-features">
-                                <span><i class="fa-solid fa-circle-check text-purple"></i> Funil de vendas digital otimizado</span>
-                                <span><i class="fa-solid fa-circle-check text-purple"></i> Plataforma de alta conversão</span>
+                                <span><i class="fa-solid fa-circle-check text-purple"></i> Funil de vendas digital
+                                    otimizado</span>
+                                <span><i class="fa-solid fa-circle-check text-purple"></i> Plataforma de alta
+                                    conversão</span>
                             </div>
-                            <a href="https://maternidade.techrocket.site" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-block">
+                            <a href="https://maternidade.techrocket.com.br" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary btn-sm btn-block">
                                 <span>Ver Projeto</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
@@ -236,19 +253,24 @@
                     <!-- Produto 2: Daven & Iori -->
                     <div class="glass-card produto-card">
                         <div class="produto-img-box">
-                            <img src="/assets/img/tech_rocket/DeI_mock.png" alt="Daven & Iori E-commerce" class="produto-img">
+                            <img src="/assets/img/tech_rocket/DeI_mock.png" alt="Daven & Iori E-commerce"
+                                class="produto-img">
                         </div>
                         <div class="produto-content">
                             <div class="produto-tag cyan">E-commerce & Moda</div>
                             <h3 class="produto-title">Daven & Iori</h3>
                             <p class="produto-desc">
-                                Marca autoral de moda e lifestyle. Um projeto que une design exclusivo, sofisticação e presença digital estratégica integrada à Nuvemshop.
+                                Marca autoral de moda e lifestyle. Um projeto que une design exclusivo, sofisticação e
+                                presença digital estratégica integrada à Nuvemshop.
                             </p>
                             <div class="produto-features">
-                                <span><i class="fa-solid fa-circle-check text-cyan"></i> Loja virtual de alta velocidade</span>
-                                <span><i class="fa-solid fa-circle-check text-cyan"></i> Experiência de compra fluida no mobile</span>
+                                <span><i class="fa-solid fa-circle-check text-cyan"></i> Loja virtual de alta
+                                    velocidade</span>
+                                <span><i class="fa-solid fa-circle-check text-cyan"></i> Experiência de compra fluida no
+                                    mobile</span>
                             </div>
-                            <a href="https://daveniori.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-block">
+                            <a href="https://daveniori.com.br" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary btn-sm btn-block">
                                 <span>Acessar Loja</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
@@ -264,7 +286,8 @@
                 <div class="section-header text-center">
                     <span class="section-tag">Nossos Superpoderes</span>
                     <h2 class="section-title">Soluções de Alto Impacto para a sua Empresa</h2>
-                    <p class="section-subtitle">Combinamos inteligência artificial avançada, automação de dados e engenharia de software de ponta para impulsionar seu crescimento.</p>
+                    <p class="section-subtitle">Combinamos inteligência artificial avançada, automação de dados e
+                        engenharia de software de ponta para impulsionar seu crescimento.</p>
                 </div>
 
                 <div class="services-grid">
@@ -275,7 +298,8 @@
                         </div>
                         <h3 class="service-title">Agentes de IA & Chatbots</h3>
                         <p class="service-description">
-                            Desenvolvemos agentes inteligentes capazes de realizar suporte, vendas, qualificações e atendimento 24/7 via WhatsApp e Web sem erros.
+                            Desenvolvemos agentes inteligentes capazes de realizar suporte, vendas, qualificações e
+                            atendimento 24/7 via WhatsApp e Web sem erros.
                         </p>
                         <ul class="service-features">
                             <li><i class="fa-solid fa-check"></i> Integração com WhatsApp Business API</li>
@@ -291,7 +315,8 @@
                         </div>
                         <h3 class="service-title">Automação de Processos (n8n)</h3>
                         <p class="service-description">
-                            Conectamos seus sistemas e eliminamos tarefas repetitivas. Automatize planilhas, notas fiscais, ERPs, CRMs e fluxos operacionais sem falhas.
+                            Conectamos seus sistemas e eliminamos tarefas repetitivas. Automatize planilhas, notas
+                            fiscais, ERPs, CRMs e fluxos operacionais sem falhas.
                         </p>
                         <ul class="service-features">
                             <li><i class="fa-solid fa-check"></i> Workflows customizados em n8n</li>
@@ -307,7 +332,8 @@
                         </div>
                         <h3 class="service-title">Desenvolvimento de Apps & SaaS</h3>
                         <p class="service-description">
-                            Criamos aplicativos web e mobile sob medida, com foco em usabilidade impecável, alta velocidade e arquitetura escalável pronta para milhares de usuários.
+                            Criamos aplicativos web e mobile sob medida, com foco em usabilidade impecável, alta
+                            velocidade e arquitetura escalável pronta para milhares de usuários.
                         </p>
                         <ul class="service-features">
                             <li><i class="fa-solid fa-check"></i> Apps Nativos & PWA (React / Node / Python)</li>
@@ -323,7 +349,8 @@
                         </div>
                         <h3 class="service-title">Sites, Landing Pages & E-commerce</h3>
                         <p class="service-description">
-                            Páginas de alta conversão e lojas virtuais na Nuvemshop projetadas para encantar visitantes e transformá-los em clientes com velocidade extrema.
+                            Páginas de alta conversão e lojas virtuais na Nuvemshop projetadas para encantar visitantes
+                            e transformá-los em clientes com velocidade extrema.
                         </p>
                         <ul class="service-features">
                             <li><i class="fa-solid fa-check"></i> Carregamento instantâneo e SEO Avançado</li>
@@ -343,18 +370,22 @@
                         <span class="section-tag"><i class="fa-solid fa-robot"></i> Experimente Agora</span>
                         <h2 class="playground-title">Veja um Agente TechRocket em Ação</h2>
                         <p class="playground-desc">
-                            Interaja com nosso simulador de Agente IA em tempo real. Veja como ele responde instantaneamente, qualifica potenciais clientes e fornece informações precisas 24h por dia.
+                            Interaja com nosso simulador de Agente IA em tempo real. Veja como ele responde
+                            instantaneamente, qualifica potenciais clientes e fornece informações precisas 24h por dia.
                         </p>
 
                         <div class="quick-questions">
                             <p class="quick-title">Sugestões de perguntas para testar:</p>
-                            <button class="chip-btn" data-question="Como o chatbot de IA pode atender meus clientes no WhatsApp?">
+                            <button class="chip-btn"
+                                data-question="Como o chatbot de IA pode atender meus clientes no WhatsApp?">
                                 💬 Como a IA atende no WhatsApp?
                             </button>
-                            <button class="chip-btn" data-question="Qual é o prazo médio para criar uma automação em n8n?">
+                            <button class="chip-btn"
+                                data-question="Qual é o prazo médio para criar uma automação em n8n?">
                                 ⚡ Qual o prazo de entrega?
                             </button>
-                            <button class="chip-btn" data-question="Vocês integram a loja Nuvemshop com automações em n8n?">
+                            <button class="chip-btn"
+                                data-question="Vocês integram a loja Nuvemshop com automações em n8n?">
                                 🛍️ Como funciona com a Nuvemshop?
                             </button>
                         </div>
@@ -375,14 +406,16 @@
                         <div class="chat-messages" id="chat-messages">
                             <div class="message msg-agent">
                                 <div class="msg-content">
-                                    🚀 Olá! Sou o assistente de IA da <strong>TechRocket</strong>. Como posso impulsionar o seu negócio com tecnologia e automação hoje?
+                                    🚀 Olá! Sou o assistente de IA da <strong>TechRocket</strong>. Como posso
+                                    impulsionar o seu negócio com tecnologia e automação hoje?
                                 </div>
                                 <span class="msg-time">Agora</span>
                             </div>
                         </div>
 
                         <form class="chat-input-area" id="chat-form">
-                            <input type="text" id="chat-input" placeholder="Escreva sua mensagem aqui..." autocomplete="off">
+                            <input type="text" id="chat-input" placeholder="Escreva sua mensagem aqui..."
+                                autocomplete="off">
                             <button type="submit" class="chat-send-btn" aria-label="Enviar Mensagem">
                                 <i class="fa-solid fa-paper-plane"></i>
                             </button>
@@ -398,7 +431,8 @@
                 <div class="section-header text-center">
                     <span class="section-tag"><i class="fa-solid fa-calculator"></i> Simulação de Economia</span>
                     <h2 class="section-title">Quanto sua Empresa Pode Economizar com a TechRocket?</h2>
-                    <p class="section-subtitle">Ajuste os valores abaixo e calcule em tempo real o retorno sobre investimento (ROI) de automatizar seus processos operacionais.</p>
+                    <p class="section-subtitle">Ajuste os valores abaixo e calcule em tempo real o retorno sobre
+                        investimento (ROI) de automatizar seus processos operacionais.</p>
                 </div>
 
                 <div class="calculator-card glass-card">
@@ -424,7 +458,8 @@
                                 <label for="hourly-cost">Custo médio por hora trabalhada (R$):</label>
                                 <span class="control-value" id="val-hourly-cost">R$ 45/h</span>
                             </div>
-                            <input type="range" id="hourly-cost" min="20" max="150" value="45" step="5" class="custom-range">
+                            <input type="range" id="hourly-cost" min="20" max="150" value="45" step="5"
+                                class="custom-range">
                         </div>
                     </div>
 
@@ -463,20 +498,24 @@
                 <div class="section-header text-center">
                     <span class="section-tag"><i class="fa-solid fa-handshake"></i> Aliança Estratégica</span>
                     <h2 class="section-title">Nosso <span class="gradient-text">Parceiro</span> Oficial</h2>
-                    <p class="section-subtitle">Trabalhamos ao lado da SomosTec BR para entregar soluções digitais de alto nível.</p>
+                    <p class="section-subtitle">Trabalhamos ao lado da SomosTec BR para entregar soluções digitais de
+                        alto nível.</p>
                 </div>
 
                 <div class="parceiro-single-box">
                     <div class="glass-card parceiro-card single-partner">
                         <div class="parceiro-logo-box">
-                            <img src="/assets/img/tech_rocket/somos_tec.png" alt="SomosTec BR Logo" class="parceiro-logo-img">
+                            <img src="/assets/img/tech_rocket/somos_tec.png" alt="SomosTec BR Logo"
+                                class="parceiro-logo-img">
                         </div>
                         <div class="parceiro-info-box">
                             <h3 class="parceiro-title">SomosTec BR</h3>
                             <p class="parceiro-desc">
-                                Na SomosTecBR, criamos sistemas, estratégias e ferramentas digitais para ajudar sua empresa a prosperar de verdade no ambiente competitivo atual.
+                                Na SomosTecBR, criamos sistemas, estratégias e ferramentas digitais para ajudar sua
+                                empresa a prosperar de verdade no ambiente competitivo atual.
                             </p>
-                            <a href="https://somos.tec.br" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                            <a href="https://somos.tec.br" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary btn-sm">
                                 <span>Visitar somos.tec.br</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
@@ -501,7 +540,9 @@
                             <i class="fa-solid fa-chevron-down faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Desenvolvemos <strong>Landing Pages de alta conversão</strong>, <strong>Chatbots com IA</strong> para WhatsApp e Web, <strong>Automações no n8n</strong> integrando sistemas e <strong>Lojas virtuais na Nuvemshop</strong>.</p>
+                            <p>Desenvolvemos <strong>Landing Pages de alta conversão</strong>, <strong>Chatbots com
+                                    IA</strong> para WhatsApp e Web, <strong>Automações no n8n</strong> integrando
+                                sistemas e <strong>Lojas virtuais na Nuvemshop</strong>.</p>
                         </div>
                     </div>
 
@@ -511,7 +552,9 @@
                             <i class="fa-solid fa-chevron-down faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Projetos de automação pontuais e agentes de IA iniciam testes operacionais em até <strong>7 a 14 dias úteis</strong>.</p>
+                            <p>Projetos de automação pontuais e agentes de IA iniciam testes operacionais em até
+                                <strong>7 a 14 dias úteis</strong>.
+                            </p>
                         </div>
                     </div>
 
@@ -521,7 +564,9 @@
                             <i class="fa-solid fa-chevron-down faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Preencha o formulário abaixo ou fale conosco diretamente no WhatsApp. Alinhamos os objetivos da sua empresa e enviamos uma proposta transparente com prazos e estimativa clara de ROI.</p>
+                            <p>Preencha o formulário abaixo ou fale conosco diretamente no WhatsApp. Alinhamos os
+                                objetivos da sua empresa e enviamos uma proposta transparente com prazos e estimativa
+                                clara de ROI.</p>
                         </div>
                     </div>
                 </div>
@@ -536,7 +581,8 @@
                         <span class="section-tag">Próximo Passo</span>
                         <h2 class="contact-title">Pronto para Começar?</h2>
                         <p class="contact-desc">
-                            Solicite um orçamento personalizado para o seu negócio e descubra como a tecnologia e a automação podem acelerar seus resultados.
+                            Solicite um orçamento personalizado para o seu negócio e descubra como a tecnologia e a
+                            automação podem acelerar seus resultados.
                         </p>
 
                         <div class="contact-highlights">
@@ -551,7 +597,8 @@
                         </div>
 
                         <div class="direct-channels">
-                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20TechRocket" target="_blank" rel="noopener noreferrer" class="whatsapp-direct">
+                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20TechRocket"
+                                target="_blank" rel="noopener noreferrer" class="whatsapp-direct">
                                 <i class="fa-brands fa-whatsapp"></i>
                                 <span>Falar diretamente via WhatsApp</span>
                             </a>
@@ -571,11 +618,13 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="form-email">E-mail *</label>
-                                <input type="email" id="form-email" name="email" required placeholder="carlos@suaempresa.com">
+                                <input type="email" id="form-email" name="email" required
+                                    placeholder="carlos@suaempresa.com">
                             </div>
                             <div class="form-group">
                                 <label for="form-phone">WhatsApp *</label>
-                                <input type="tel" id="form-phone" name="whatsapp" required placeholder="(11) 99999-9999">
+                                <input type="tel" id="form-phone" name="whatsapp" required
+                                    placeholder="(11) 99999-9999">
                             </div>
                         </div>
 
@@ -627,7 +676,7 @@
             <div class="footer-links">
                 <h4>Ecossistema</h4>
                 <ul>
-                    <li><a href="https://maternidade.techrocket.site" target="_blank">Maternidade de Lucro</a></li>
+                    <li><a href="https://maternidade.techrocket.com.br" target="_blank">Maternidade de Lucro</a></li>
                     <li><a href="https://daveniori.com.br" target="_blank">Daven & Iori</a></li>
                 </ul>
             </div>
@@ -650,4 +699,5 @@
     <!-- Script Customizado -->
     <script src="/assets/js/tech_rocket.js"></script>
 </body>
+
 </html>

@@ -10,23 +10,23 @@ require_once 'data.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto M. Braga - Karate Shotokan</title>
 
-    <link rel="canonical" href="https://karate.techrocket.site/" />
+    <link rel="canonical" href="https://karate.techrocket.com.br/" />
     <meta name="description"
         content="Instituto M. Braga Karate Shotokan no Tucuruvi. Treine com o Sensei Marcelo Braga. Disciplina e tradição JKS.">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://karate.techrocket.site/">
+    <meta property="og:url" content="https://karate.techrocket.com.br/">
     <meta property="og:title" content="Instituto M. Braga - Karate Shotokan">
     <meta property="og:description"
         content="Karate Shotokan no Tucuruvi. Formação de caráter, disciplina e excelência física. Agende sua aula experimental.">
-    <meta property="og:image" content="https://karate.techrocket.site/assets/img/material-m-braga/senei-marcelo.webp">
+    <meta property="og:image" content="https://karate.techrocket.com.br/assets/img/material-m-braga/senei-marcelo.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Instituto M. Braga - Karate Shotokan">
     <meta name="twitter:description" content="Treine Karate Shotokan com o Sensei Marcelo Braga.">
-    <meta name="twitter:image" content="https://karate.techrocket.site/assets/img/material-m-braga/senei-marcelo.webp">
+    <meta name="twitter:image" content="https://karate.techrocket.com.br/assets/img/material-m-braga/senei-marcelo.webp">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

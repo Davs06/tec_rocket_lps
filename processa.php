@@ -1,4 +1,5 @@
 <?php
+
 /**
  * TechRocket - Processador de Leads & Integração n8n Webhook
  */
@@ -51,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'servico' => $servico,
         'projeto' => $projeto,
         'data_envio' => date('Y-m-d H:i:s'),
-        'origem_url' => $_SERVER['HTTP_REFERER'] ?? 'https://techrocket.site/'
+        'origem_url' => $_SERVER['HTTP_REFERER'] ?? 'https://techrocket.com.br/'
     ];
 
     // Disparo Assíncrono do Webhook (via cURL)

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,8 +50,13 @@
         }
 
         @keyframes float404 {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-12px); }
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-12px);
+            }
         }
 
         .error-title {
@@ -111,15 +117,18 @@
             .error-nav-grid {
                 grid-template-columns: 1fr;
             }
+
             .error-code {
                 font-size: 5rem;
             }
+
             .error-card {
                 padding: 2rem 1.5rem;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Ambient Space Background Canvas & Glows -->
@@ -140,7 +149,7 @@
             </p>
 
             <div class="error-nav-grid">
-                <a href="https://techrocket.site" class="error-nav-card">
+                <a href="https://techrocket.com.br" class="error-nav-card">
                     <i class="fa-solid fa-rocket error-nav-icon text-cyan"></i>
                     <span class="error-nav-label">TechRocket</span>
                 </a>
@@ -148,7 +157,7 @@
                     <i class="fa-solid fa-bag-shopping error-nav-icon text-purple"></i>
                     <span class="error-nav-label">Daven & Iori</span>
                 </a>
-                <a href="https://maternidade.techrocket.site" class="error-nav-card">
+                <a href="https://maternidade.techrocket.com.br" class="error-nav-card">
                     <i class="fa-solid fa-graduation-cap error-nav-icon text-green"></i>
                     <span class="error-nav-label">Maternidade</span>
                 </a>
@@ -164,4 +173,5 @@
     <!-- Script Customizado -->
     <script src="/assets/js/tech_rocket.js"></script>
 </body>
+
 </html>
