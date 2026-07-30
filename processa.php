@@ -1,57 +1,78 @@
 <?php
+/**
+ * TechRocket - Processador de Leads & Integração n8n Webhook
+ */
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = urlencode($_POST['nome']);
-    $email = urldecode($_POST['email']);
-    $whatsapp = $_POST['whatsapp'];
-    $projeto = $_POST['origem'] ?? 'desconhecido';
+    $nome = trim($_POST['nome'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $whatsapp = trim($_POST['whatsapp'] ?? '');
+    $servico = trim($_POST['servico'] ?? 'nao_especificado');
+    $projeto = trim($_POST['origem'] ?? 'tech_rocket_institucional');
 
+    // Higienizar número de WhatsApp (remover caracteres não numéricos e prefixar DDI 55)
+    $clean_whatsapp = preg_replace('/[^0-9]/', '', $whatsapp);
+    if (!empty($clean_whatsapp) && !preg_match('/^55/', $clean_whatsapp)) {
+        $clean_whatsapp = '55' . $clean_whatsapp;
+    }
 
-    // Lógica de Direcionamento e Tags
+    // Lógica de Direcionamento de Webhook & Redirecionamento
+    $webhook_url = "";
+    $redirect_url = "obrigado.html?from=" . urlencode($projeto);
+
     switch ($projeto) {
         case 'ebook-maternidade':
-            $checkout_url = "https://pay.hotmart.com/F104029048E?name=$nome&email=$email";
-            // Aqui você dispararia a tag para o funil de maternidade
+            $nome_enc = urlencode($nome);
+            $email_enc = urlencode($email);
+            $redirect_url = "https://pay.hotmart.com/F104029048E?name={$nome_enc}&email={$email_enc}";
+            $webhook_url = "https://editor.somos.tec.br/webhook-test/tech-rocket";
             break;
 
         case 'tech_rocket_institucional':
-            $checkout_url = "obrigado.php?from=tech_rocket";
+            $redirect_url = "obrigado.html?from=tech_rocket";
             $webhook_url = "https://editor.somos.tec.br/webhook-test/tech-rocket";
             break;
 
         case 'daven_iori':
-            $checkout_url = "obrigado.php?from=daven_iori";
+            $redirect_url = "obrigado.html?from=daven_iori";
             $webhook_url = "https://hook.somos.tec.br/webhook/tech-rocket";
             break;
 
         default:
-            $checkout_url = "404.php";
+            $redirect_url = "obrigado.html";
             break;
     }
 
-    // Opcional: Logar os dados para o seu sistema de automação (n8n/Webhooks)
-    $data = [
+    // Payload estruturado para disparo n8n / CRM
+    $payload = [
         'nome' => $nome,
         'email' => $email,
-        'whatsapp' => '55' . $whatsapp,
-        'projeto' => $projeto // Agora você tem o nome exato do projeto aqui!
+        'whatsapp' => $clean_whatsapp,
+        'servico' => $servico,
+        'projeto' => $projeto,
+        'data_envio' => date('Y-m-d H:i:s'),
+        'origem_url' => $_SERVER['HTTP_REFERER'] ?? 'https://techrocket.site/'
     ];
 
-
-    // DISPARO DO WEBHOOK (via cURL)
+    // Disparo Assíncrono do Webhook (via cURL)
     if (!empty($webhook_url)) {
         $ch = curl_init($webhook_url);
-        $payload = json_encode($data);
+        $json_payload = json_encode($payload);
 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $json_payload);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 5); // Timeout curto para não atrasar o redirect
+        curl_setopt($ch, CURLOPT_TIMEOUT, 4); // Timeout curto de 4s para resposta rápida do formulário
 
         curl_exec($ch);
         curl_close($ch);
     }
 
-    header("Location: $checkout_url");
+    // Redirecionamento Final do Usuário
+    header("Location: " . $redirect_url);
+    exit();
+} else {
+    // Se acessado diretamente via GET, redireciona para a página principal
+    header("Location: index.html");
     exit();
 }
